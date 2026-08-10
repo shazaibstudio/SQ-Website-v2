@@ -1,0 +1,476 @@
+/* SQ Interactive - SEO Optimized Global Styles */
+
+/* =============================================
+   STICKY WHATSAPP BUTTON - Highest converting
+   element for Pakistan market
+   ============================================= */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 5.5rem;
+  left: 1.5rem;
+  z-index: 998;
+  background: #25D366;
+  color: white;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: wa-pulse 3s infinite;
+}
+.whatsapp-sticky:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(37,211,102,0.6);
+}
+.whatsapp-sticky .wa-label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.4s ease;
+}
+.whatsapp-sticky:hover .wa-label {
+  max-width: 120px;
+}
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
+}
+@media (max-width: 768px) {
+  .whatsapp-sticky { bottom: 5rem; left: 1rem; padding: 0.75rem; }
+  .whatsapp-sticky .wa-label { display: none; }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #f1c40f);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  width: 0%;
+}
+
+/* Critical CSS - Above the fold */
+:root {
+  --primary-gold: #d4af37;
+  --secondary-gold: #f1c40f;
+  --dark-bg: #121212;
+  --light-text: #f5f5f5;
+  --glass-bg: rgba(255,255,255,0.05);
+}
+
+/* Base Styles - Optimized for Core Web Vitals */
+body { 
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+  background: var(--dark-bg); 
+  color: var(--light-text); 
+  line-height: 1.6;
+  font-display: swap; /* Improve font loading */
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 { 
+  font-family: 'Playfair Display', serif; 
+  font-weight: 600;
+  font-display: swap;
+}
+
+.gold { color: var(--primary-gold); }
+
+/* Performance Optimizations */
+img { 
+  max-width: 100%; 
+  height: auto; 
+  loading: lazy;
+  decoding: async;
+  /* Prevent layout shift */
+  aspect-ratio: attr(width) / attr(height);
+}
+
+video {
+  object-fit: cover;
+  object-position: center;
+  /* Optimize video loading */
+  preload: metadata;
+}
+
+/* Critical resource hints */
+.preload-font {
+  font-display: swap;
+}
+
+/* Demo Button - Optimized for interaction */
+.demo-btn {
+  position: fixed; 
+  bottom: 2rem; 
+  right: 2rem; 
+  z-index: 999;
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+  box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+  animation: pulse 5s infinite;
+  transition: all 0.3s ease;
+  /* Improve paint performance */
+  will-change: transform;
+  contain: layout style paint;
+}
+
+.demo-btn:hover { 
+  box-shadow: 0 0 20px rgba(212,175,55,0.5); 
+  transform: translateY(-3px); 
+}
+
+@keyframes pulse { 
+  0%, 100% { transform: scale(1); } 
+  50% { transform: scale(1.05); } 
+}
+
+/* Before/After Slider - Performance optimized */
+.before-after { 
+  position: relative; 
+  height: 24rem; 
+  overflow: hidden; 
+  border-radius: 1rem;
+  /* Optimize for GPU acceleration */
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.before-after img { 
+  position: absolute; 
+  inset: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  /* Prevent repaints during interaction */
+  backface-visibility: hidden;
+}
+
+.slider-handle { 
+  position: absolute; 
+  width: 4px; 
+  height: 100%; 
+  background: var(--primary-gold); 
+  left: 50%; 
+  cursor: ew-resize;
+  /* Optimize for interaction */
+  touch-action: pan-x;
+}
+
+.slider-handle:after {
+  content: ''; 
+  position: absolute; 
+  width: 32px; 
+  height: 32px; 
+  border-radius: 50%;
+  background: var(--primary-gold); 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+/* Labels */
+.label { 
+  position: absolute; 
+  top: 10px; 
+  padding: 4px 10px; 
+  background: rgba(0,0,0,0.6); 
+  color: var(--light-text); 
+  font-size: 0.875rem; 
+  border-radius: 6px; 
+}
+
+.label.left { left: 10px; }
+.label.right { right: 10px; }
+
+/* Steam Background - Optimized for performance */
+.steam-bg {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  /* Optimize background rendering */
+  contain: layout style paint;
+}
+
+.steam-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(18,18,18,0.95));
+  backdrop-filter: blur(4px);
+  z-index: -1;
+  /* Optimize backdrop filter */
+  will-change: backdrop-filter;
+}
+
+/* Scrollbar Hide */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+/* Portfolio Cards - Optimized animations */
+.portfolio-card { 
+  position: relative; 
+  overflow: hidden; 
+  border-radius: 1rem; 
+  background: #0f0f0f;
+  /* Optimize for hover effects */
+  contain: layout style paint;
+}
+
+.portfolio-card img { 
+  transition: transform 0.5s ease;
+  /* Optimize transform performance */
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.portfolio-card:hover img { 
+  transform: scale(1.08); 
+}
+
+.portfolio-overlay {
+  position: absolute; 
+  inset: 0; 
+  background: rgba(0,0,0,0.8);
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.4s ease; 
+  padding: 1.5rem; 
+  text-align: center;
+  /* Optimize overlay performance */
+  will-change: opacity;
+}
+
+.portfolio-card:hover .portfolio-overlay { 
+  opacity: 1; 
+}
+
+.portfolio-overlay h3 { 
+  color: var(--primary-gold); 
+  font-size: 1.25rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.portfolio-overlay p { 
+  color: #ccc; 
+  font-size: 0.9rem; 
+  margin-bottom: 1rem; 
+}
+
+/* Filter Buttons */
+.filter-btn { 
+  border: 1px solid var(--primary-gold); 
+  color: var(--primary-gold); 
+  border-radius: 9999px; 
+  padding: 0.5rem 1.25rem; 
+  font-size: 0.875rem; 
+  transition: all 0.3s ease;
+  /* Optimize button interactions */
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-btn:hover, 
+.filter-btn.active { 
+  background: var(--primary-gold); 
+  color: black; 
+}
+
+/* Glass Effect */
+.glass { 
+  background: var(--glass-bg); 
+  border: 1px solid rgba(255,255,255,0.1); 
+  backdrop-filter: blur(8px);
+  /* Optimize backdrop filter */
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Button Styles */
+.btn-gold { 
+  background: linear-gradient(90deg, var(--primary-gold), #b8860b); 
+  color: var(--dark-bg); 
+  transition: all 0.3s ease;
+  /* Optimize button performance */
+  will-change: transform, box-shadow;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(212,175,55,0.5);
+}
+
+/* SEO-friendly content visibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive Optimizations */
+@media (max-width: 768px) {
+  .demo-btn {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .before-after {
+    height: 16rem;
+  }
+  
+  .steam-bg {
+    background-attachment: scroll; /* Better mobile performance */
+  }
+  
+  /* Optimize mobile interactions */
+  .portfolio-card:hover img {
+    transform: none; /* Disable hover on mobile */
+  }
+  
+  .portfolio-card:active img {
+    transform: scale(1.02); /* Use active state instead */
+  }
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: wait;
+}
+
+/* Skeleton loading for better perceived performance */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Accessibility - Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  .demo-btn {
+    animation: none;
+  }
+  
+  .portfolio-card img {
+    transition: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .gold {
+    color: #ffff00; /* Higher contrast gold */
+  }
+  
+  .btn-gold {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Focus States - Improved accessibility */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-gold);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
+}
+
+/* Skip to content link for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary-gold);
+  color: var(--dark-bg);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Print Styles */
+@media print {
+  .demo-btn,
+  nav,
+  footer,
+  .portfolio-overlay {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3, h4 {
+    color: black;
+    page-break-after: avoid;
+  }
+  
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+  }
+  
+  .gold {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dark-bg: #0a0a0a;
+    --light-text: #ffffff;
+  }
+}
+
+/* Performance monitoring */
+.perf-mark {
+  display: none; /* Hidden performance markers for analytics */
+}

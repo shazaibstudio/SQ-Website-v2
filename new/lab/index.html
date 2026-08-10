@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQ Lab — SQ Interactive</title>
+  <meta name="description" content="SQ Lab — experiments, prototypes and emerging technology. SQ Interactive.">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="icon" type="image/x-icon"       href="../SQ_Interactive_Favicon_Pack/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16"   href="../SQ_Interactive_Favicon_Pack/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32"   href="../SQ_Interactive_Favicon_Pack/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48"   href="../SQ_Interactive_Favicon_Pack/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96"   href="../SQ_Interactive_Favicon_Pack/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="../SQ_Interactive_Favicon_Pack/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../SQ_Interactive_Favicon_Pack/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="../SQ_Interactive_Favicon_Pack/android-chrome-512x512.png">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="sq-scroll-progress" aria-hidden="true"></div>
+
+  <nav class="sq-nav" aria-label="Main navigation">
+    <div class="sq-nav__inner">
+      <a href="../" class="sq-nav__logo" aria-label="SQ Interactive — home">
+        <div class="sq-nav__logo-mark">
+          <img src="../images/no-background.png" alt="" width="auto" height="36" aria-hidden="true">
+        </div>
+        <span class="sq-nav__logo-text">SQ <span>Interactive</span></span>
+      </a>
+      <div class="sq-nav__links">
+        <a href="../work/"        class="sq-nav__link">Work</a>
+        <a href="../how-we-work/" class="sq-nav__link">How We Work</a>
+        <a href="../about/"       class="sq-nav__link">About</a>
+      </div>
+      <a href="../contact/" class="sq-nav__cta sq-btn sq-btn--primary sq-btn--sm">Tell us your challenge</a>
+      <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
+        <div class="sq-nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></div>
+      </button>
+    </div>
+    <div class="sq-nav__mobile" id="sq-mobile-nav">
+      <a href="../work/"        class="sq-nav__mobile-link">Work</a>
+      <a href="../how-we-work/" class="sq-nav__mobile-link">How We Work</a>
+      <a href="../about/"       class="sq-nav__mobile-link">About</a>
+      <div class="sq-nav__mobile-cta">
+        <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--sm" style="width:100%; justify-content:center;">Tell us your challenge</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="sq-page-hero">
+      <div class="sq-container">
+        <span class="sq-label">04 — SQ Lab</span>
+        <h1>Explore What's Next</h1>
+        <p>Our R&amp;D space. Experiments, prototypes and emerging technology — tested before it's offered to clients. This page is being built.</p>
+        <div style="margin-top: var(--sq-space-8); display:flex; gap:var(--sq-space-4); flex-wrap:wrap;">
+          <a href="../" class="sq-btn sq-btn--secondary">← Back to home</a>
+          <a href="../contact/" class="sq-btn sq-btn--primary">Tell us your challenge</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="sq-footer">
+    <div class="sq-container">
+      <div class="sq-footer__bottom">
+        <p class="sq-footer__copy">&copy; <span id="sq-year"></span> SQ Interactive.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/923009452153?text=Hi%20SQ%20Interactive!%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="sq-wa-sticky" aria-label="Chat on WhatsApp"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span>WhatsApp</span></a>
+  <a href="../contact/" class="sq-float-cta" aria-label="Tell us your challenge" data-cta="float"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span>Tell us your challenge</span></a>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

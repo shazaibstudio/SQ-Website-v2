@@ -1,0 +1,96 @@
+/* ============================================================
+   SQ INTERACTIVE — DESIGN TOKENS
+   Single source of truth. Do not scatter values elsewhere.
+   ============================================================ */
+
+:root {
+
+  /* ── Backgrounds ── */
+  --sq-bg:            #121212;
+  --sq-bg-deep:       #0A0A0A;
+  --sq-surface:       #0D0D0D;
+  --sq-surface-raised:#1A1A1A;
+  --sq-surface-high:  #1E1E1E;
+
+  /* ── Brand Gold ── */
+  --sq-gold:          #D4AF37;
+  --sq-gold-light:    #F1C40F;
+  --sq-gold-dark:     #B8860B;
+  --sq-gold-subtle:   rgba(212, 175, 55, 0.08);
+  --sq-gold-border:   rgba(212, 175, 55, 0.20);
+  --sq-gold-glow:     rgba(212, 175, 55, 0.30);
+
+  /* ── Text ── */
+  --sq-text:          #F5F5F5;
+  --sq-text-strong:   #FFFFFF;
+  --sq-text-secondary:#A0A0A0;
+  --sq-text-muted:    #666666;
+
+  /* ── Borders & Surfaces ── */
+  --sq-border:        rgba(255, 255, 255, 0.07);
+  --sq-border-subtle: rgba(255, 255, 255, 0.04);
+  --sq-glass:         rgba(255, 255, 255, 0.04);
+  --sq-glass-border:  rgba(255, 255, 255, 0.08);
+
+  /* ── Gradients ── */
+  --sq-gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F1C40F 100%);
+  --sq-gradient-dark: linear-gradient(180deg, #121212 0%, #0A0A0A 100%);
+
+  /* ── Typography ── */
+  --sq-font-sans:     'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --sq-font-serif:    'Playfair Display', Georgia, serif;
+
+  --sq-text-xs:       0.75rem;    /* 12px */
+  --sq-text-sm:       0.875rem;   /* 14px */
+  --sq-text-base:     1rem;       /* 16px */
+  --sq-text-lg:       1.125rem;   /* 18px */
+  --sq-text-xl:       1.25rem;    /* 20px */
+  --sq-text-2xl:      1.5rem;     /* 24px */
+  --sq-text-3xl:      1.875rem;   /* 30px */
+  --sq-text-4xl:      2.25rem;    /* 36px */
+  --sq-text-5xl:      3rem;       /* 48px */
+  --sq-text-6xl:      3.75rem;    /* 60px */
+
+  --sq-leading-tight: 1.15;
+  --sq-leading-snug:  1.35;
+  --sq-leading-base:  1.6;
+  --sq-leading-loose: 1.8;
+
+  /* ── Spacing ── */
+  --sq-space-1:   0.25rem;   /* 4px  */
+  --sq-space-2:   0.5rem;    /* 8px  */
+  --sq-space-3:   0.75rem;   /* 12px */
+  --sq-space-4:   1rem;      /* 16px */
+  --sq-space-5:   1.25rem;   /* 20px */
+  --sq-space-6:   1.5rem;    /* 24px */
+  --sq-space-8:   2rem;      /* 32px */
+  --sq-space-10:  2.5rem;    /* 40px */
+  --sq-space-12:  3rem;      /* 48px */
+  --sq-space-16:  4rem;      /* 64px */
+  --sq-space-20:  5rem;      /* 80px */
+  --sq-space-24:  6rem;      /* 96px */
+  --sq-space-32:  8rem;      /* 128px */
+
+  /* ── Border Radius ── */
+  --sq-radius-sm:   4px;
+  --sq-radius-md:   8px;
+  --sq-radius-lg:   12px;
+  --sq-radius-xl:   16px;
+  --sq-radius-2xl:  24px;
+  --sq-radius-full: 9999px;
+
+  /* ── Transitions ── */
+  --sq-duration-fast:   150ms;
+  --sq-duration-base:   250ms;
+  --sq-duration-slow:   400ms;
+  --sq-ease:            cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Layout ── */
+  --sq-max-width:       1200px;
+  --sq-nav-height:      72px;
+
+  /* ── Shadows ── */
+  --sq-shadow-sm:   0 1px 3px rgba(0,0,0,0.4);
+  --sq-shadow-md:   0 4px 16px rgba(0,0,0,0.5);
+  --sq-shadow-gold: 0 4px 20px rgba(212,175,55,0.25);
+}

@@ -1,0 +1,64 @@
+/* Mobile-specific fixes for SQ Interactive */
+
+@media (max-width: 768px) {
+  /* Chat widget positioning */
+  #chat-widget {
+    bottom: 80px !important;
+    right: 20px !important;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  
+  #chat-box {
+    bottom: 140px !important;
+    right: 20px !important;
+    width: 90vw;
+    max-width: 320px;
+  }
+  
+  /* Demo button positioning */
+  .demo-btn {
+    bottom: 20px !important;
+    right: 20px !important;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  /* Form optimizations */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 12px;
+  }
+  
+  /* Mobile menu fixes */
+  #mobile-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 9999;
+  }
+  
+  /* Trust signals mobile layout */
+  .trust-signals {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .trust-signals span {
+    font-size: 12px;
+  }
+}
+
+/* WhatsApp click tracking styles */
+.whatsapp-link {
+  transition: all 0.2s ease;
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.05);
+}
