@@ -2,7 +2,29 @@
 
 All notable changes to SQ Interactive website are documented here.
 
-## [2.0.0] — Final Homepage Refinement & Mobile Optimization
+## [2.1.0] — Design Standard Established & Digital Page Cleanup
+
+### Added
+- DESIGN_STANDARD.md — Comprehensive design and UX standard for all pages
+- Design standard checklist for new pages
+- Cross-page consistency guidelines
+
+### Changed
+- **Navigation**: Removed "Tell us your challenge" CTA button from nav (desktop and mobile)
+  - CTA now only appears as floating button on right side
+  - Cleaner, less cluttered navigation
+  - Consistent across all pages
+- **Digital Page**: Applied homepage design standard
+  - Removed redundant CTA from nav
+  - Maintained all content and functionality
+  - Consistent styling with homepage
+
+### Fixed
+- Navigation clutter reduced
+- CTA button positioning standardized
+- Mobile menu simplified
+
+---
 
 ### Added
 - Comprehensive mobile optimization for 320px–430px screens
