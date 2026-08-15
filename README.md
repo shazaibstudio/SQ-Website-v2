@@ -1,0 +1,201 @@
+# SQ Interactive — Website v2
+
+A premium digital innovation studio website built with semantic HTML, responsive CSS, and vanilla JavaScript. Dark theme with gold accents, optimized for all devices.
+
+## Overview
+
+SQ Interactive is a navigation-first homepage that guides visitors through four capability worlds: Digital, AI, Immersive, and Lab. The site emphasizes clarity, premium aesthetics, and mobile-first design.
+
+## Architecture
+
+### Core Structure
+- **index.html** — Homepage with hero, hub (4 worlds), live proof, philosophy, CTA, footer
+- **css/tokens.css** — Design system (colors, typography, spacing, shadows)
+- **css/base.css** — Global styles, reset, typography scale, accessibility
+- **css/components.css** — Reusable UI (nav, buttons, cards, footer, floating CTAs)
+- **css/home.css** — Homepage-specific styles (hero, hub, proof, philosophy, CTA)
+- **js/nav.js** — Mobile menu toggle and scroll behavior
+- **js/main.js** — Reveal animations and scroll progress
+- **js/analytics.js** — GA4 tracking
+- **js/hub.js** — Hub card interactions
+
+### Design System
+
+**Colors**
+- Background: `#0A0A0A` (deep), `#0D0D0D` (surface)
+- Brand Gold: `#D4AF37` (primary), `#F1C40F` (light)
+- Text: `#FFFFFF` (strong), `#F5F5F5` (default), `#A0A0A0` (secondary)
+
+**Typography**
+- Serif: Playfair Display (headings, numbers)
+- Sans: Plus Jakarta Sans (body, UI)
+- Scale: 12px–60px with fluid sizing via `clamp()`
+
+**Spacing**
+- 8px increments: `--sq-space-1` through `--sq-space-32`
+- Responsive padding/margins using tokens
+
+**Breakpoints**
+- Mobile: 320px–479px
+- Tablet: 480px–767px
+- Desktop: 768px–1023px
+- Wide: 1024px–1919px
+- Ultra-wide: 1920px+
+
+## Key Features
+
+### Homepage Sections
+
+**Hero**
+- Full-viewport video background with overlay
+- Responsive heading (1.75rem–5rem)
+- Dual CTA buttons (stack on mobile)
+- Location badge
+- Scroll hint (hidden on mobile)
+
+**Hub — Four Worlds**
+- 4 navigation cards (Digital, AI, Immersive, Lab)
+- Primary identifier: "01 — Digital" (gold, serif, prominent)
+- Card image, subtitle, title (hidden on mobile), description (hidden on mobile)
+- Action bar with arrow (hidden on mobile)
+- Grid: 1 col mobile → 2 col tablet/desktop → 4 col ultra-wide
+- Responsive padding: `var(--sq-space-5)` mobile → `var(--sq-space-8)` desktop
+
+**Live Proof**
+- 3 real websites (DesignLine Construction, Heaven Hotel, SQ Interactive)
+- Live indicator (green dot), domain, category tags
+- Grid: 1 col mobile → 2 col at 480px → 3 col at 768px
+
+**Philosophy**
+- Centered statement with gold emphasis
+- Responsive font: 1rem mobile → 1.875rem desktop
+
+**Final CTA**
+- "Have a problem worth solving?" heading
+- Dual action buttons
+- Disclaimer text
+
+**Footer**
+- Brand info + contact links (phone, email, WhatsApp)
+- Navigation (Explore, Company)
+- Social icons with brand colors (Instagram, LinkedIn, Facebook, YouTube)
+- Copyright
+
+### Navigation
+- Fixed header with logo, desktop links, mobile toggle
+- Mobile menu slides down from nav
+- Scroll-triggered background opacity increase
+- Logo text hidden on screens ≤480px
+
+### Floating Elements
+- WhatsApp sticky button (bottom-left, green)
+- Contact CTA button (bottom-right, gold)
+- Both 44px touch targets on mobile, icon-only at ≤479px
+
+### Accessibility
+- Skip-to-content link
+- ARIA labels on all interactive elements
+- Focus states (2px gold outline)
+- Semantic HTML (nav, main, section, h1–h6)
+- Reduced motion support
+- Color contrast meets WCAG AA
+
+### Analytics & SEO
+- GA4 tracking with event labels
+- JSON-LD schemas (Organization, LocalBusiness)
+- Open Graph meta tags
+- Twitter Card meta tags
+- Canonical URL
+- Geo-targeting (Lahore, Pakistan)
+- Favicon pack (16px–512px)
+
+## Mobile Optimization
+
+### Hero Section
+- Height: 70vh max-height 600px (mobile) vs 85vh/900px (desktop)
+- Heading: `clamp(1.75rem, 4.5vw, 2.5rem)` (mobile)
+- Subheading: 0.9rem (mobile)
+- CTA buttons: Stack vertically, full width on mobile
+- Scroll hint: Hidden at 640px
+
+### Hub Cards
+- Padding: `var(--sq-space-5)` mobile → `var(--sq-space-6)` at 640px → `var(--sq-space-8)` at 1024px
+- Number: `1.375rem–1.875rem` mobile → `1.75rem–2.25rem` desktop
+- Title/description/action-label: Hidden on mobile, shown at 768px+
+- Subtitle: `var(--sq-text-xs)` mobile → `var(--sq-text-sm)` at 768px+
+
+### Live Proof Grid
+- 1 column mobile → 2 columns at 480px → 3 columns at 768px
+
+### Footer
+- 1 column mobile → 2fr 1fr 1fr at 640px
+- Social icons: 44px touch targets on mobile, 36px on desktop
+
+### Navigation
+- Padding: `var(--sq-space-4)` mobile → `var(--sq-space-6)` desktop
+- Logo text "Interactive" hidden at ≤480px
+
+### Floating Buttons
+- Position: `var(--sq-space-4)` mobile → `var(--sq-space-6)` desktop
+- 44px minimum touch targets
+
+## Links & Navigation
+
+**Hub Cards**
+- Digital → `/digital/`
+- AI → `/ai/`
+- Immersive → `/immersive/`
+- Lab → `/lab/`
+
+**CTAs**
+- Contact → `/contact/`
+- Work → `/work/`
+
+**Social**
+- Instagram → https://www.instagram.com/sqinteractive
+- LinkedIn → https://www.linkedin.com/company/sqinteractive
+- Facebook → https://www.facebook.com/share/1A619NgVwh/
+- YouTube → https://www.youtube.com/@SQINTERACTIVE
+
+**Live Work**
+- DesignLine Construction → https://designlineconstruction.com/
+- Heaven Hotel → https://www.heavenhotel.com.pk/
+- SQ Interactive → https://sqinteractive.com/
+
+## Performance
+
+- No external dependencies (vanilla JS)
+- Optimized images with lazy loading
+- CSS-only animations (no JS libraries)
+- Preconnect to Google Fonts and Analytics
+- DNS prefetch for third-party services
+- Scroll progress bar (CSS-driven)
+
+## Browser Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Mobile browsers (iOS Safari 14+, Chrome Android)
+
+## File Size
+
+- HTML: ~15KB
+- CSS (combined): ~45KB
+- JS (combined): ~8KB
+- Total: ~68KB (before compression)
+
+## Deployment
+
+Hosted on GitHub Pages. All links are relative or absolute URLs. No build process required.
+
+## Future Enhancements
+
+- World-specific pages (digital/, ai/, immersive/, lab/)
+- Work/portfolio page (/work/)
+- How We Work page (/how-we-work/)
+- About page (/about/)
+- Contact form page (/contact/)
+- Blog/resources section
+- Dark/light mode toggle
+- Internationalization (Urdu support)
