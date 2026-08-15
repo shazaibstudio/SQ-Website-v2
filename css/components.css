@@ -441,8 +441,8 @@
 
 .sq-wa-sticky {
   position: fixed;
-  bottom: var(--sq-space-4);
-  left: var(--sq-space-4);
+  bottom: calc(var(--sq-space-4) + 60px);
+  right: var(--sq-space-4);
   z-index: 200;
   display: inline-flex;
   align-items: center;
@@ -466,8 +466,8 @@
 
 @media (min-width: 640px) {
   .sq-wa-sticky {
-    bottom: var(--sq-space-6);
-    left: var(--sq-space-6);
+    bottom: calc(var(--sq-space-6) + 68px);
+    right: var(--sq-space-6);
   }
 }
 
