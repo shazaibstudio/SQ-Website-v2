@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/contact.css">
   <link rel="icon" type="image/x-icon"       href="../SQ_Interactive_Favicon_Pack/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16"   href="../SQ_Interactive_Favicon_Pack/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32"   href="../SQ_Interactive_Favicon_Pack/favicon-32x32.png">
@@ -36,7 +36,6 @@
         <a href="/how-we-work/" class="sq-nav__link">How We Work</a>
         <a href="/about/"       class="sq-nav__link">About</a>
       </div>
-      <a href="/contact/" class="sq-nav__cta sq-btn sq-btn--primary sq-btn--sm" aria-current="page">Tell us your challenge</a>
       <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
         <div class="sq-nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></div>
       </button>
@@ -45,97 +44,144 @@
       <a href="/work/"        class="sq-nav__mobile-link">Work</a>
       <a href="/how-we-work/" class="sq-nav__mobile-link">How We Work</a>
       <a href="/about/"       class="sq-nav__mobile-link">About</a>
-      <div class="sq-nav__mobile-cta">
-        <a href="/contact/" class="sq-btn sq-btn--primary sq-btn--sm" style="width:100%; justify-content:center;">Tell us your challenge</a>
-      </div>
     </div>
   </nav>
   <main id="main">
 
-    <div class="sq-page-hero">
-      <div class="sq-container">
-        <span class="sq-label">Contact</span>
-        <h1>Tell us your challenge.</h1>
-        <p>No pressure. No sales pitch. Tell us what you're trying to achieve and we'll have an honest conversation about whether and how we can help.</p>
+    <!-- HERO -->
+    <section class="ct-hero" aria-labelledby="contact-heading">
+      <div class="ct-hero__content">
+        <h1 class="ct-hero__heading" id="contact-heading">Tell us your challenge.</h1>
+        <p class="ct-hero__subheading">No pressure. No sales pitch. Tell us what you're trying to achieve and we'll have an honest conversation about whether and how we can help.</p>
       </div>
-    </div>
+    </section>
 
-    <section class="sq-contact-body" aria-label="Contact methods">
-      <div class="sq-container">
-
-        <div class="sq-contact-grid">
+    <!-- CONTACT METHODS -->
+    <section class="ct-methods" aria-label="Contact methods">
+      <div class="ct-methods__inner">
+        <div class="ct-methods__grid">
 
           <!-- WhatsApp -->
           <a href="https://wa.me/923009452153?text=Hi%20SQ%20Interactive!%20I%27d%20like%20to%20discuss%20a%20project."
              target="_blank" rel="noopener noreferrer"
-             class="sq-contact-card sq-contact-card--primary"
+             class="ct-method-card"
              data-cta="contact_whatsapp"
              aria-label="Chat on WhatsApp">
-            <div class="sq-contact-card__icon" aria-hidden="true">
+            <div class="ct-method-card__icon" aria-hidden="true">
               <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
             </div>
-            <div class="sq-contact-card__body">
-              <p class="sq-contact-card__label">WhatsApp</p>
-              <p class="sq-contact-card__value">+92 300 9452153</p>
-              <p class="sq-contact-card__note">Fastest way to reach us</p>
-            </div>
-            <span class="sq-contact-card__arrow" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </span>
+            <p class="ct-method-card__label">WhatsApp</p>
+            <p class="ct-method-card__value">+92 300 9452153</p>
+            <p class="ct-method-card__note">Fastest way to reach us</p>
           </a>
 
           <!-- Phone -->
           <a href="tel:+923009452153"
-             class="sq-contact-card"
+             class="ct-method-card"
              data-cta="contact_phone"
              aria-label="Call us">
-            <div class="sq-contact-card__icon" aria-hidden="true">
+            <div class="ct-method-card__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             </div>
-            <div class="sq-contact-card__body">
-              <p class="sq-contact-card__label">Phone</p>
-              <p class="sq-contact-card__value">+92 300 9452153</p>
-              <p class="sq-contact-card__note">Mon &ndash; Sat, 9am &ndash; 6pm</p>
-            </div>
-            <span class="sq-contact-card__arrow" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </span>
+            <p class="ct-method-card__label">Phone</p>
+            <p class="ct-method-card__value">+92 300 9452153</p>
+            <p class="ct-method-card__note">Mon – Sat, 9am – 6pm</p>
           </a>
 
           <!-- Email -->
           <a href="mailto:admin@sqinteractive.com"
-             class="sq-contact-card"
+             class="ct-method-card"
              data-cta="contact_email"
              aria-label="Email us">
-            <div class="sq-contact-card__icon" aria-hidden="true">
+            <div class="ct-method-card__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </div>
-            <div class="sq-contact-card__body">
-              <p class="sq-contact-card__label">Email</p>
-              <p class="sq-contact-card__value">admin@sqinteractive.com</p>
-              <p class="sq-contact-card__note">We reply within one business day</p>
-            </div>
-            <span class="sq-contact-card__arrow" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </span>
+            <p class="ct-method-card__label">Email</p>
+            <p class="ct-method-card__value">admin@sqinteractive.com</p>
+            <p class="ct-method-card__note">We reply within one business day</p>
           </a>
 
           <!-- Location -->
-          <div class="sq-contact-card sq-contact-card--static">
-            <div class="sq-contact-card__icon" aria-hidden="true">
+          <div class="ct-method-card">
+            <div class="ct-method-card__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             </div>
-            <div class="sq-contact-card__body">
-              <p class="sq-contact-card__label">Location</p>
-              <p class="sq-contact-card__value">Lahore, Pakistan</p>
-              <p class="sq-contact-card__note">Working across Pakistan</p>
-            </div>
+            <p class="ct-method-card__label">Location</p>
+            <p class="ct-method-card__value">Lahore, Pakistan</p>
+            <p class="ct-method-card__note">Working across Pakistan</p>
           </div>
 
         </div>
+      </div>
+    </section>
 
-        <p class="sq-contact-note">Not sure what you need yet? That's fine. Tell us what you're trying to achieve and we'll help you figure out the rest.</p>
+    <!-- CONTACT FORM -->
+    <section class="ct-form-section" aria-labelledby="form-heading">
+      <div class="ct-form-inner">
+        <div class="ct-form-header">
+          <p class="sq-label">Get in Touch</p>
+          <h2 id="form-heading">Send us a message</h2>
+          <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
 
+        <form class="ct-form" action="https://formspree.io/f/xyzqwert" method="POST" aria-label="Contact form">
+          <div class="ct-form-row">
+            <div class="ct-form-group ct-form-group--half">
+              <label for="name">Your Name <span class="ct-required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="ct-form-group ct-form-group--half">
+              <label for="email">Email Address <span class="ct-required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+
+          <div class="ct-form-row">
+            <div class="ct-form-group ct-form-group--half">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567">
+            </div>
+            <div class="ct-form-group ct-form-group--half">
+              <label for="company">Company / Business</label>
+              <input type="text" id="company" name="company" placeholder="Your company name">
+            </div>
+          </div>
+
+          <div class="ct-form-group">
+            <label for="service">What are you interested in? <span class="ct-required">*</span></label>
+            <select id="service" name="service" required>
+              <option value="">Select a service...</option>
+              <option value="digital">Digital (Websites, E-commerce, Software)</option>
+              <option value="ai">AI & Automation</option>
+              <option value="immersive">Immersive Technology (VR, AR, 3D)</option>
+              <option value="lab">SQ Lab (Research & Innovation)</option>
+              <option value="other">Other / Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="ct-form-group">
+            <label for="message">Tell us about your challenge <span class="ct-required">*</span></label>
+            <textarea id="message" name="message" placeholder="What are you trying to achieve? What's the main challenge you're facing?" required></textarea>
+            <p class="ct-form-help">Be as detailed as you'd like. The more we know, the better we can help.</p>
+          </div>
+
+          <div class="ct-form-group">
+            <label for="budget">Budget Range (Optional)</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range...</option>
+              <option value="under-50k">Under PKR 50,000</option>
+              <option value="50k-100k">PKR 50,000 – 100,000</option>
+              <option value="100k-200k">PKR 100,000 – 200,000</option>
+              <option value="200k-500k">PKR 200,000 – 500,000</option>
+              <option value="500k-plus">PKR 500,000+</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+          </div>
+
+          <button type="submit" class="sq-btn sq-btn--primary sq-btn--lg ct-form-submit" data-cta="contact_form_submit">Send Message</button>
+
+          <p class="ct-form-note">We'll review your message and get back to you within 24 hours. No spam, no pressure.</p>
+        </form>
       </div>
     </section>
 

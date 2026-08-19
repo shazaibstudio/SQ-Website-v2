@@ -5,10 +5,10 @@
    ============================================================ */
 
 :root {
-  --im-accent: #D946EF;
-  --im-accent-dark: #A21CAF;
-  --im-accent-subtle: rgba(217, 70, 239, 0.08);
-  --im-accent-border: rgba(217, 70, 239, 0.20);
+  --im-accent: #FF9500;
+  --im-accent-dark: #E67E00;
+  --im-accent-subtle: rgba(255, 149, 0, 0.08);
+  --im-accent-border: rgba(255, 149, 0, 0.20);
 }
 
 /* HERO */
@@ -451,6 +451,32 @@
   font-size: var(--sq-text-sm);
   color: var(--sq-text-secondary);
   line-height: var(--sq-leading-loose);
+}
+
+/* CROSSLINKS */
+.im-crosslinks {
+  background: var(--sq-surface);
+  border-top: 1px solid var(--sq-border);
+  padding-block: var(--sq-space-16);
+}
+
+.im-crosslinks-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sq-space-4);
+  margin-top: var(--sq-space-8);
+}
+
+@media (min-width: 640px) {
+  .im-crosslinks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .im-crosslinks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* FINAL CTA */
