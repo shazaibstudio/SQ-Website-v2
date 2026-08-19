@@ -4,21 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Immersive — SQ Interactive</title>
-  <meta name="description" content="VR, AR, 3D and interactive experiences. SQ Interactive.">
+  <meta name="description" content="VR, AR, 3D and interactive experiences that transform how audiences engage with your content and ideas.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Immersive — SQ Interactive">
+  <meta property="og:description" content="VR, AR, 3D and interactive experiences built around your business.">
+  <meta property="og:url" content="https://www.sqinteractive.com/immersive/">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages.css">
-  <link rel="icon" type="image/x-icon"       href="../SQ_Interactive_Favicon_Pack/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16"   href="../SQ_Interactive_Favicon_Pack/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32"   href="../SQ_Interactive_Favicon_Pack/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48"   href="../SQ_Interactive_Favicon_Pack/favicon-48x48.png">
-  <link rel="icon" type="image/png" sizes="96x96"   href="../SQ_Interactive_Favicon_Pack/favicon-96x96.png">
-  <link rel="apple-touch-icon" sizes="180x180"      href="../SQ_Interactive_Favicon_Pack/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="../SQ_Interactive_Favicon_Pack/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="../SQ_Interactive_Favicon_Pack/android-chrome-512x512.png">
+  <link rel="stylesheet" href="../css/immersive.css">
+  <link rel="icon" type="image/x-icon" href="../SQ_Interactive_Favicon_Pack/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../SQ_Interactive_Favicon_Pack/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../SQ_Interactive_Favicon_Pack/apple-touch-icon.png">
+  <style>
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    [data-reveal].will-reveal {
+      transition: opacity var(--sq-duration-base) var(--sq-ease),
+                  transform var(--sq-duration-base) var(--sq-ease);
+    }
+    [data-reveal].is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -26,101 +41,270 @@
 
   <nav class="sq-nav" aria-label="Main navigation">
     <div class="sq-nav__inner">
-      <a href="/" class="sq-nav__logo" aria-label="SQ Interactive — home">
+      <a href="../" class="sq-nav__logo" aria-label="SQ Interactive — home">
         <div class="sq-nav__logo-mark">
           <img src="../images/no-background.png" alt="" width="auto" height="36" aria-hidden="true">
         </div>
         <span class="sq-nav__logo-text">SQ <span>Interactive</span></span>
       </a>
       <div class="sq-nav__links">
-        <a href="/work/"        class="sq-nav__link">Work</a>
-        <a href="/how-we-work/" class="sq-nav__link">How We Work</a>
-        <a href="/about/"       class="sq-nav__link">About</a>
+        <a href="../work/" class="sq-nav__link">Work</a>
+        <a href="../how-we-work/" class="sq-nav__link">How We Work</a>
+        <a href="../about/" class="sq-nav__link">About</a>
       </div>
-      <a href="/contact/" class="sq-nav__cta sq-btn sq-btn--primary sq-btn--sm" data-cta="nav_cta">Tell us your challenge</a>
       <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
         <div class="sq-nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></div>
       </button>
     </div>
     <div class="sq-nav__mobile" id="sq-mobile-nav">
-      <a href="/work/"        class="sq-nav__mobile-link">Work</a>
-      <a href="/how-we-work/" class="sq-nav__mobile-link">How We Work</a>
-      <a href="/about/"       class="sq-nav__mobile-link">About</a>
-      <div class="sq-nav__mobile-cta">
-        <a href="/contact/" class="sq-btn sq-btn--primary sq-btn--sm" style="width:100%; justify-content:center;">Tell us your challenge</a>
-      </div>
+      <a href="../work/" class="sq-nav__mobile-link">Work</a>
+      <a href="../how-we-work/" class="sq-nav__mobile-link">How We Work</a>
+      <a href="../about/" class="sq-nav__mobile-link">About</a>
     </div>
   </nav>
 
   <main id="main">
     <!-- HERO -->
-    <div class="sq-page-hero">
-      <div class="sq-container">
-        <span class="sq-label">03 — Immersive</span>
-        <h1>Make It Immersive</h1>
-        <p>VR, AR, 3D and interactive experiences that transform how audiences engage with your content and ideas.</p>
-      </div>
-    </div>
-
-    <!-- CAPABILITIES -->
-    <section class="sq-about-section" aria-labelledby="immersive-capabilities-heading">
-      <div class="sq-about-inner">
-        <div class="sq-about-text">
-          <span class="sq-label">What We Create</span>
-          <h2 id="immersive-capabilities-heading">Immersive experiences when they actually add value.</h2>
-          <p>VR, AR, and 3D aren't always the answer. But when the problem calls for it — when you need to show scale, demonstrate a space, or create an unforgettable experience — immersive technology can be transformative.</p>
+    <section class="im-hero" aria-labelledby="im-hero-heading">
+      <div class="im-hero__bg" aria-hidden="true"></div>
+      <video class="im-hero__video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="../videos/vr experiance.mov" type="video/mp4">
+      </video>
+      <div class="im-hero__overlay" aria-hidden="true"></div>
+      
+      <div class="im-hero__content">
+        <div class="im-hero__breadcrumb">
+          <a href="../" class="im-hero__breadcrumb-home">SQ Home</a>
+          <span class="im-hero__breadcrumb-sep">/</span>
+          <span class="sq-label">03 — Immersive</span>
         </div>
-        <div class="sq-caps-grid">
-          <div class="sq-cap-card">
-            <p class="sq-cap-card__title">Virtual Reality</p>
-            <p class="sq-cap-card__desc">Fully immersive VR experiences for training, visualization, or engagement.</p>
-          </div>
-          <div class="sq-cap-card">
-            <p class="sq-cap-card__title">Augmented Reality</p>
-            <p class="sq-cap-card__desc">AR applications that blend digital content with the real world.</p>
-          </div>
-          <div class="sq-cap-card">
-            <p class="sq-cap-card__title">3D Visualization</p>
-            <p class="sq-cap-card__desc">Interactive 3D models and environments for products, spaces, and concepts.</p>
-          </div>
-          <div class="sq-cap-card">
-            <p class="sq-cap-card__title">360° Experiences</p>
-            <p class="sq-cap-card__desc">Immersive panoramic content for property tours and storytelling.</p>
-          </div>
-          <div class="sq-cap-card">
-            <p class="sq-cap-card__title">Interactive Installation</p>
-            <p class="sq-cap-card__desc">Physical installations with embedded interactive or immersive elements.</p>
-          </div>
-          <div class="sq-cap-card">
-            <p class="sq-cap-card__title">Web-based Immersion</p>
-            <p class="sq-cap-card__desc">3D and interactive content accessible in the browser — no special equipment needed.</p>
-          </div>
+        
+        <h1 class="im-hero__heading" id="im-hero-heading" data-reveal>
+          Make it <em>immersive.</em>
+        </h1>
+        
+        <p class="im-hero__subheading" data-reveal>
+          VR, AR, 3D and interactive experiences that transform how audiences engage with your content and ideas.
+        </p>
+        
+        <div class="im-hero__actions" data-reveal>
+          <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--lg" data-cta="im_hero_start">Start a project</a>
+          <a href="#work" class="sq-btn sq-btn--secondary sq-btn--lg" data-cta="im_hero_work">See our work</a>
         </div>
       </div>
     </section>
 
-    <!-- PHILOSOPHY -->
-    <section class="sq-about-section sq-about-section--alt" aria-labelledby="immersive-philosophy-heading">
-      <div class="sq-about-inner">
-        <div class="sq-about-text">
-          <span class="sq-label">Our Approach</span>
-          <h2 id="immersive-philosophy-heading">Technology serves the idea, not the other way around.</h2>
-          <p>The best immersive experiences don't feel like they're using technology. They feel natural, purposeful, and focused. We don't build immersive experiences just because they're possible — we build them because they solve a specific problem or communicate an idea more effectively than any other medium.</p>
+    <!-- WHAT WE BUILD -->
+    <section class="im-what-we-build" aria-labelledby="im-what-heading">
+      <div class="im-section-inner">
+        <div class="im-section-header">
+          <p class="sq-label">What We Create</p>
+          <h2 id="im-what-heading">Immersive experiences when they actually add value.</h2>
+          <p class="im-what-intro">VR, AR, and 3D aren't always the answer. But when the problem calls for it — when you need to show scale, demonstrate a space, or create an unforgettable experience — immersive technology can be transformative.</p>
+        </div>
+
+        <div class="im-services-grid">
+          <article class="im-service-card" data-reveal>
+            <div class="im-service-card__img">
+              <img src="../images/vr and 360/360 tour.png" alt="Virtual Reality" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-service-card__body">
+              <h3 class="im-service-card__title">Virtual Reality</h3>
+              <p class="im-service-card__desc">Fully immersive VR experiences for training, visualization, or engagement.</p>
+              <ul class="im-service-card__features">
+                <li>VR environment design & development</li>
+                <li>Interactive VR experiences</li>
+                <li>VR training simulations</li>
+                <li>Multi-user VR platforms</li>
+                <li>VR hardware integration</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="im-service-card" data-reveal>
+            <div class="im-service-card__img">
+              <img src="../images/vr and 360/NeuroSpace VR Preview.png" alt="Augmented Reality" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-service-card__body">
+              <h3 class="im-service-card__title">Augmented Reality</h3>
+              <p class="im-service-card__desc">AR applications that blend digital content with the real world.</p>
+              <ul class="im-service-card__features">
+                <li>Mobile AR applications</li>
+                <li>Web-based AR experiences</li>
+                <li>Product visualization AR</li>
+                <li>AR filters & effects</li>
+                <li>Location-based AR</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="im-service-card" data-reveal>
+            <div class="im-service-card__img">
+              <img src="../images/vr and 360/interior 2.png" alt="3D Visualization" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-service-card__body">
+              <h3 class="im-service-card__title">3D Visualization</h3>
+              <p class="im-service-card__desc">Interactive 3D models and environments for products, spaces, and concepts.</p>
+              <ul class="im-service-card__features">
+                <li>3D modeling & rendering</li>
+                <li>Interactive 3D configurators</li>
+                <li>Real-time 3D visualization</li>
+                <li>Product showcase experiences</li>
+                <li>Architectural visualization</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="im-service-card" data-reveal>
+            <div class="im-service-card__img">
+              <img src="../images/vr and 360/360 3.png" alt="360° Experiences" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-service-card__body">
+              <h3 class="im-service-card__title">360° Experiences</h3>
+              <p class="im-service-card__desc">Immersive panoramic content for property tours and storytelling.</p>
+              <ul class="im-service-card__features">
+                <li>360° photography & videography</li>
+                <li>Virtual property tours</li>
+                <li>Interactive hotspot navigation</li>
+                <li>Immersive storytelling</li>
+                <li>Real estate showcases</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="im-service-card" data-reveal>
+            <div class="im-service-card__img">
+              <img src="../images/vr and 360/vr exp.png" alt="Interactive Installation" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-service-card__body">
+              <h3 class="im-service-card__title">Interactive Installation</h3>
+              <p class="im-service-card__desc">Physical installations with embedded interactive or immersive elements.</p>
+              <ul class="im-service-card__features">
+                <li>Interactive display systems</li>
+                <li>Motion-sensing installations</li>
+                <li>Projection mapping</li>
+                <li>Touch-screen experiences</li>
+                <li>Event installations</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="im-service-card" data-reveal>
+            <div class="im-service-card__img">
+              <img src="../images/vr and 360/vr training.png" alt="Web-based Immersion" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-service-card__body">
+              <h3 class="im-service-card__title">Web-based Immersion</h3>
+              <p class="im-service-card__desc">3D and interactive content accessible in the browser — no special equipment needed.</p>
+              <ul class="im-service-card__features">
+                <li>WebGL 3D experiences</li>
+                <li>Browser-based VR</li>
+                <li>Interactive web experiences</li>
+                <li>Responsive 3D content</li>
+                <li>Cross-platform compatibility</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL WORK -->
+    <section class="im-real-work" id="work" aria-labelledby="im-real-work-heading">
+      <div class="im-section-inner">
+        <div class="im-section-header">
+          <p class="sq-label">Real Work</p>
+          <h2 id="im-real-work-heading">Immersive projects we've built.</h2>
+        </div>
+
+        <div class="im-projects-grid">
+          <a href="../work/" class="im-project-card" data-reveal>
+            <div class="im-project-card__img">
+              <img src="../images/vr and 360/360 tour.jpg" alt="Immersive Project" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-project-card__body">
+              <h3 class="im-project-card__name">360° Virtual Tour</h3>
+              <p class="im-project-card__category">Real Estate</p>
+              <span class="im-project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a href="../work/" class="im-project-card" data-reveal>
+            <div class="im-project-card__img">
+              <img src="../images/vr and 360/interior 3.png" alt="Immersive Project" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-project-card__body">
+              <h3 class="im-project-card__name">Interior Design VR</h3>
+              <p class="im-project-card__category">Visualization</p>
+              <span class="im-project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a href="../work/" class="im-project-card" data-reveal>
+            <div class="im-project-card__img">
+              <img src="../images/vr and 360/NeuroSpace VR Preview.png" alt="Immersive Project" loading="lazy" width="600" height="400">
+            </div>
+            <div class="im-project-card__body">
+              <h3 class="im-project-card__name">VR Training Experience</h3>
+              <p class="im-project-card__category">Training</p>
+              <span class="im-project-card__cta">View Project →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="im-how-we-work" aria-labelledby="im-how-heading">
+      <div class="im-section-inner">
+        <div class="im-section-header">
+          <p class="sq-label">How We Work</p>
+          <h2 id="im-how-heading">Our Approach</h2>
+        </div>
+
+        <div class="im-process-steps">
+          <div class="im-step" data-reveal>
+            <div class="im-step__num">01</div>
+            <h3 class="im-step__title">Conceptualize</h3>
+            <p class="im-step__desc">Understand your vision and how immersive technology can enhance it.</p>
+          </div>
+          <div class="im-step" data-reveal>
+            <div class="im-step__num">02</div>
+            <h3 class="im-step__title">Design</h3>
+            <p class="im-step__desc">Create immersive experiences that engage and inspire your audience.</p>
+          </div>
+          <div class="im-step" data-reveal>
+            <div class="im-step__num">03</div>
+            <h3 class="im-step__title">Develop</h3>
+            <p class="im-step__desc">Build with cutting-edge immersive technology and best practices.</p>
+          </div>
+          <div class="im-step" data-reveal>
+            <div class="im-step__num">04</div>
+            <h3 class="im-step__title">Deploy</h3>
+            <p class="im-step__desc">Launch and optimize for maximum impact and engagement.</p>
+          </div>
+          <div class="im-step" data-reveal>
+            <div class="im-step__num">05</div>
+            <h3 class="im-step__title">Iterate</h3>
+            <p class="im-step__desc">Gather feedback and continuously improve the experience.</p>
+          </div>
+          <div class="im-step" data-reveal>
+            <div class="im-step__num">06</div>
+            <h3 class="im-step__title">Support</h3>
+            <p class="im-step__desc">Ongoing maintenance, updates, and technical support.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FINAL CTA -->
-    <section class="sq-cta" aria-labelledby="immersive-cta-heading">
-      <div class="sq-cta__inner" data-reveal>
-        <span class="sq-label">Let's Create</span>
-        <h2 class="sq-cta__heading" id="immersive-cta-heading">Have an idea that deserves immersion?</h2>
-        <p class="sq-cta__sub">Tell us what you're trying to communicate or achieve. We'll help you figure out whether an immersive experience is the right solution — and what it could become.</p>
-        <div class="sq-cta__actions">
-          <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--lg" data-cta="immersive_primary_cta">Start a conversation</a>
-          <a href="../work/"    class="sq-btn sq-btn--secondary sq-btn--lg" data-cta="immersive_see_work">See our work</a>
+    <section class="im-final-cta" aria-labelledby="im-final-cta-heading">
+      <div class="im-section-inner">
+        <div class="im-final-cta__content" data-reveal>
+          <span class="sq-label">Get Started</span>
+          <h2 class="im-final-cta__heading" id="im-final-cta-heading">Have an idea that deserves immersion?</h2>
+          <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--lg" data-cta="im_final_cta">Let's talk</a>
         </div>
-        <p class="sq-cta__note">No pressure. No sales pitch. Just a genuine conversation about your business.</p>
       </div>
     </section>
 
@@ -133,39 +317,70 @@
         <div class="sq-footer__brand">
           <p style="font-family:var(--sq-font-sans); font-size:var(--sq-text-base); font-weight:700; color:var(--sq-text-strong); margin-bottom:var(--sq-space-3);">SQ Interactive</p>
           <p>We help businesses understand what they actually need, then design and build the right digital solution.</p>
+          <div class="sq-footer__contact">
+            <a href="tel:+923009452153" class="sq-footer__contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +92 300 9452153
+            </a>
+            <a href="mailto:admin@sqinteractive.com" class="sq-footer__contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              admin@sqinteractive.com
+            </a>
+          </div>
         </div>
         <div>
           <h2 class="sq-footer__heading">Explore</h2>
           <ul class="sq-footer__links">
-            <li><a href="../digital/"   class="sq-footer__link">Digital</a></li>
-            <li><a href="../ai/"        class="sq-footer__link">AI &amp; Automation</a></li>
+            <li><a href="../digital/" class="sq-footer__link">Digital</a></li>
+            <li><a href="../ai/" class="sq-footer__link">AI & Automation</a></li>
             <li><a href="../immersive/" class="sq-footer__link">Immersive</a></li>
-            <li><a href="../lab/"       class="sq-footer__link">SQ Lab</a></li>
+            <li><a href="../lab/" class="sq-footer__link">SQ Lab</a></li>
           </ul>
         </div>
         <div>
           <h2 class="sq-footer__heading">Company</h2>
           <ul class="sq-footer__links">
-            <li><a href="../work/"        class="sq-footer__link">Work</a></li>
+            <li><a href="../work/" class="sq-footer__link">Work</a></li>
             <li><a href="../how-we-work/" class="sq-footer__link">How We Work</a></li>
-            <li><a href="../about/"       class="sq-footer__link">About</a></li>
-            <li><a href="../contact/"     class="sq-footer__link">Contact</a></li>
+            <li><a href="../about/" class="sq-footer__link">About</a></li>
+            <li><a href="../contact/" class="sq-footer__link">Contact</a></li>
           </ul>
         </div>
       </div>
       <div class="sq-footer__bottom">
         <p class="sq-footer__copy">&copy; <span id="sq-year"></span> SQ Interactive. All rights reserved.</p>
+        <div class="sq-footer__social">
+          <a href="https://www.instagram.com/sqinteractive" target="_blank" rel="noopener noreferrer" class="sq-footer__social-link sq-footer__social-link--instagram" aria-label="SQ Interactive on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7m9-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/sqinteractive" target="_blank" rel="noopener noreferrer" class="sq-footer__social-link sq-footer__social-link--linkedin" aria-label="SQ Interactive on LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/share/1A619NgVwh/" target="_blank" rel="noopener noreferrer" class="sq-footer__social-link sq-footer__social-link--facebook" aria-label="SQ Interactive on Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@SQINTERACTIVE" target="_blank" rel="noopener noreferrer" class="sq-footer__social-link sq-footer__social-link--youtube" aria-label="SQ Interactive on YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
 
   <a href="https://wa.me/923009452153?text=Hi%20SQ%20Interactive!%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="sq-wa-sticky" aria-label="Chat on WhatsApp">
     <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-    <span>WhatsApp</span>
   </a>
-  <a href="../contact/" class="sq-float-cta" aria-label="Tell us your challenge" data-cta="float">
+  <a href="../contact/" class="sq-float-cta" aria-label="Contact SQ">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-    <span>Tell us your challenge</span>
   </a>
 
   <script src="../js/nav.js" defer></script>
