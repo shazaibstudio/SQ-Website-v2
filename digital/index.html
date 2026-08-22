@@ -91,7 +91,7 @@
   <!-- Navigation -->
   <nav class="sq-nav" aria-label="Main navigation">
     <div class="sq-nav__inner">
-      <a href="/" class="sq-nav__logo" aria-label="SQ Interactive — home">
+      <a href="../" class="sq-nav__logo" aria-label="SQ Interactive — home">
         <div class="sq-nav__logo-mark">
           <img src="../images/no-background.png" alt="" width="auto" height="36" aria-hidden="true">
         </div>
@@ -99,9 +99,9 @@
       </a>
 
       <div class="sq-nav__links">
-        <a href="/work/" class="sq-nav__link">Work</a>
-        <a href="/how-we-work/" class="sq-nav__link">How We Work</a>
-        <a href="/about/" class="sq-nav__link">About</a>
+        <a href="../work/" class="sq-nav__link">Work</a>
+        <a href="../how-we-work/" class="sq-nav__link">How We Work</a>
+        <a href="../about/" class="sq-nav__link">About</a>
       </div>
 
       <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
@@ -114,9 +114,9 @@
     </div>
 
     <div class="sq-nav__mobile" id="sq-mobile-nav">
-      <a href="/work/" class="sq-nav__mobile-link">Work</a>
-      <a href="/how-we-work/" class="sq-nav__mobile-link">How We Work</a>
-      <a href="/about/" class="sq-nav__mobile-link">About</a>
+      <a href="../work/" class="sq-nav__mobile-link">Work</a>
+      <a href="../how-we-work/" class="sq-nav__mobile-link">How We Work</a>
+      <a href="../about/" class="sq-nav__mobile-link">About</a>
     </div>
   </nav>
 
@@ -128,38 +128,32 @@
     <section class="dg-hero" aria-labelledby="dg-hero-heading">
       <div class="dg-hero__bg" aria-hidden="true"></div>
       <video class="dg-hero__video" autoplay muted loop playsinline aria-hidden="true" poster="../images/web image.png">
-        <source src="../videos/it.mp4" type="video/mp4">
+        <source src="../videos/it systems.mp4" type="video/mp4">
       </video>
       <div class="dg-hero__overlay" aria-hidden="true"></div>
 
       <div class="dg-hero__content">
-        <div class="dg-hero__text">
-          <div class="dg-hero__breadcrumb">
-            <a href="../" class="dg-hero__breadcrumb-home">SQ Home</a>
-            <span class="dg-hero__breadcrumb-sep">/</span>
-            <span class="sq-label">01 — Digital</span>
-          </div>
-
-          <h1 class="dg-hero__heading" id="dg-hero-heading" data-reveal>
-            Digital experiences built around <em>your business.</em>
-          </h1>
-
-          <p class="dg-hero__subheading" data-reveal>
-            Websites, commerce, software and digital experiences built around how your business actually works.
-          </p>
-
-          <div class="dg-hero__actions" data-reveal>
-            <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--lg" data-cta="digital_hero_start">Start a project</a>
-            <a href="#work" class="sq-btn sq-btn--secondary sq-btn--lg" data-cta="digital_hero_work">See our work</a>
-          </div>
-
-          <div class="dg-hero__badge" data-reveal aria-label="Geographic service area">
-            <span class="dg-hero__badge-text">Serving businesses across Pakistan and the GCC</span>
-          </div>
+        <div class="dg-hero__breadcrumb">
+          <a href="../" class="dg-hero__breadcrumb-home">SQ Home</a>
+          <span class="dg-hero__breadcrumb-sep">/</span>
+          <span class="sq-label">01 — Digital</span>
         </div>
 
-        <div class="dg-hero__logo-panel" aria-hidden="true" data-reveal>
-          <img src="../images/no-background.png" alt="" class="dg-hero__logo-img">
+        <h1 class="dg-hero__heading" id="dg-hero-heading" data-reveal>
+          Digital experiences built around <em>your business.</em>
+        </h1>
+
+        <p class="dg-hero__subheading" data-reveal>
+          Websites, commerce, software and digital experiences built around how your business actually works.
+        </p>
+
+        <div class="dg-hero__actions" data-reveal>
+          <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--lg" data-cta="digital_hero_start">Start a project</a>
+          <a href="#work" class="sq-btn sq-btn--secondary sq-btn--lg" data-cta="digital_hero_work">See our work</a>
+        </div>
+
+        <div class="dg-hero__logo" data-reveal aria-hidden="true">
+          <img src="../images/no-background.png" alt="">
         </div>
       </div>
 
@@ -172,125 +166,60 @@
     </section>
 
     <!-- ═══════════════════════════════════════
-         WHAT WE BUILD - SERVICES
+         WHAT WE BUILD
     ════════════════════════════════════════ -->
     <section class="dg-what-we-build" aria-labelledby="dg-what-heading">
       <div class="dg-section-inner">
         <div class="dg-section-header">
           <p class="sq-label">What We Build</p>
-          <h2 id="dg-what-heading">Websites, software, e-commerce and digital experiences</h2>
-          <p class="dg-what-intro">Every business has unique challenges. We combine strategy, design, and engineering to create practical digital solutions that solve real problems.</p>
+          <h2 id="dg-what-heading">Four core capabilities</h2>
         </div>
 
-        <div class="dg-services-grid">
+        <div class="dg-capabilities-grid">
 
-          <!-- Website Development -->
-          <article class="dg-service-card" data-reveal>
-            <div class="dg-service-card__img">
-              <img src="../images/web dev.png" alt="Website Design & Development" loading="lazy" width="600" height="400">
+          <!-- Websites -->
+          <div class="dg-capability-tile" data-reveal>
+            <div class="dg-capability-tile__img">
+              <img src="../images/ui ux and web/jpj.png" alt="Responsive website design" loading="lazy" width="600" height="400">
             </div>
-            <div class="dg-service-card__body">
-              <h3 class="dg-service-card__title">Website Design & Development</h3>
-              <p class="dg-service-card__desc">Beautiful, fast, and conversion-focused websites that represent your business and attract the right customers.</p>
-              <ul class="dg-service-card__features">
-                <li>Custom design & development</li>
-                <li>Mobile-first responsive design</li>
-                <li>SEO-optimized structure</li>
-                <li>Fast page speed optimization</li>
-                <li>Ongoing maintenance & support</li>
-              </ul>
+            <div class="dg-capability-tile__body">
+              <h3 class="dg-capability-tile__title">01 — Websites</h3>
+              <p class="dg-capability-tile__desc">Responsive websites and landing pages built around your business.</p>
             </div>
-          </article>
+          </div>
 
-          <!-- Software Development -->
-          <article class="dg-service-card" data-reveal>
-            <div class="dg-service-card__img">
-              <img src="../images/ui ux and web/it 2.png" alt="Custom Software & Systems" loading="lazy" width="600" height="400">
+          <!-- E-Commerce -->
+          <div class="dg-capability-tile" data-reveal>
+            <div class="dg-capability-tile__img">
+              <img src="../images/ui ux and web/it.png" alt="E-commerce and shopping interface" loading="lazy" width="600" height="400">
             </div>
-            <div class="dg-service-card__body">
-              <h3 class="dg-service-card__title">Custom Software & Systems</h3>
-              <p class="dg-service-card__desc">Purpose-built software and business systems that streamline operations and adapt as your business grows.</p>
-              <ul class="dg-service-card__features">
-                <li>Database design & implementation</li>
-                <li>Business system automation</li>
-                <li>Internal workflow tools</li>
-                <li>Data management solutions</li>
-                <li>System integration & API work</li>
-              </ul>
+            <div class="dg-capability-tile__body">
+              <h3 class="dg-capability-tile__title">02 — E-Commerce</h3>
+              <p class="dg-capability-tile__desc">Shopify and online stores designed around products and customers.</p>
             </div>
-          </article>
+          </div>
 
-          <!-- E-Commerce & Shopify -->
-          <article class="dg-service-card" data-reveal>
-            <div class="dg-service-card__img">
-              <img src="../images/website/shopify.png" alt="E-Commerce & Shopify" loading="lazy" width="600" height="400">
+          <!-- Software & Systems -->
+          <div class="dg-capability-tile" data-reveal>
+            <div class="dg-capability-tile__img">
+              <img src="../images/ui ux and web/it 2.png" alt="Software dashboard and systems" loading="lazy" width="600" height="400">
             </div>
-            <div class="dg-service-card__body">
-              <h3 class="dg-service-card__title">E-Commerce & Shopify</h3>
-              <p class="dg-service-card__desc">Beautiful online stores that convert visitors into customers and streamline your entire sales process.</p>
-              <ul class="dg-service-card__features">
-                <li>Shopify store setup & design</li>
-                <li>Product photography & optimization</li>
-                <li>Payment gateway integration</li>
-                <li>Inventory management setup</li>
-                <li>Performance optimization & analytics</li>
-              </ul>
+            <div class="dg-capability-tile__body">
+              <h3 class="dg-capability-tile__title">03 — Software & Systems</h3>
+              <p class="dg-capability-tile__desc">Dashboards, databases, portals and internal business tools.</p>
             </div>
-          </article>
+          </div>
 
-          <!-- SEO & Digital Growth -->
-          <article class="dg-service-card" data-reveal>
-            <div class="dg-service-card__img">
-              <img src="../images/seos.png" alt="SEO & Digital Growth" loading="lazy" width="600" height="400">
+          <!-- UI/UX -->
+          <div class="dg-capability-tile" data-reveal>
+            <div class="dg-capability-tile__img">
+              <img src="../images/ui ux and web/it 3.png" alt="User interface and experience design" loading="lazy" width="600" height="400">
             </div>
-            <div class="dg-service-card__body">
-              <h3 class="dg-service-card__title">SEO & Digital Growth</h3>
-              <p class="dg-service-card__desc">Strategic SEO that improves your visibility, drives qualified traffic, and helps you outrank competitors.</p>
-              <ul class="dg-service-card__features">
-                <li>Technical SEO audits & fixes</li>
-                <li>On-page optimization</li>
-                <li>Content strategy & creation</li>
-                <li>Backlink & authority building</li>
-                <li>Monthly performance tracking</li>
-              </ul>
+            <div class="dg-capability-tile__body">
+              <h3 class="dg-capability-tile__title">04 — UI/UX & Digital Experiences</h3>
+              <p class="dg-capability-tile__desc">Clear interfaces and interactive experiences people can understand quickly.</p>
             </div>
-          </article>
-
-          <!-- Automation & Workflows -->
-          <article class="dg-service-card" data-reveal>
-            <div class="dg-service-card__img">
-              <img src="../images/ai/ai agent job seeker.png" alt="Automation & Integration" loading="lazy" width="600" height="400">
-            </div>
-            <div class="dg-service-card__body">
-              <h3 class="dg-service-card__title">Automation & Integration</h3>
-              <p class="dg-service-card__desc">Automated workflows that eliminate repetitive work, reduce errors, and free your team to focus on what matters.</p>
-              <ul class="dg-service-card__features">
-                <li>Workflow automation (n8n, Zapier)</li>
-                <li>System integration & API setup</li>
-                <li>Data synchronization</li>
-                <li>Business process optimization</li>
-                <li>Custom automation solutions</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- Hosting & Support -->
-          <article class="dg-service-card" data-reveal>
-            <div class="dg-service-card__img">
-              <img src="../images/hosting.png" alt="Hosting & Technical Support" loading="lazy" width="600" height="400">
-            </div>
-            <div class="dg-service-card__body">
-              <h3 class="dg-service-card__title">Hosting & Technical Support</h3>
-              <p class="dg-service-card__desc">Reliable hosting, security, performance optimization, and 24/7 technical support for your digital infrastructure.</p>
-              <ul class="dg-service-card__features">
-                <li>Website hosting & management</li>
-                <li>SSL certificates & security</li>
-                <li>Performance monitoring</li>
-                <li>Backup & disaster recovery</li>
-                <li>Technical support & updates</li>
-              </ul>
-            </div>
-          </article>
+          </div>
 
         </div>
       </div>
@@ -311,7 +240,7 @@
           <!-- DesignLine Construction -->
           <a href="https://designlineconstruction.com/" target="_blank" rel="noopener noreferrer" class="dg-project-card" data-reveal>
             <div class="dg-project-card__img">
-              <img src="../images/website/designline 2.png" alt="DesignLine Construction website" loading="lazy" width="600" height="400">
+              <img src="../images/ui ux and web/jpj.png" alt="DesignLine Construction website" loading="lazy" width="600" height="400">
             </div>
             <div class="dg-project-card__body">
               <h3 class="dg-project-card__name">Design Line Construction</h3>
@@ -323,7 +252,7 @@
           <!-- Hotel Heaven -->
           <a href="https://www.heavenhotel.com.pk/" target="_blank" rel="noopener noreferrer" class="dg-project-card" data-reveal>
             <div class="dg-project-card__img">
-              <img src="../images/website/heaven-hotel.png" alt="Hotel Heaven website" loading="lazy" width="600" height="400">
+              <img src="../images/website/Screenshot 2026-08-15 194919.png" alt="Hotel Heaven website" loading="lazy" width="600" height="400">
             </div>
             <div class="dg-project-card__body">
               <h3 class="dg-project-card__name">Hotel Heaven</h3>
@@ -355,84 +284,30 @@
       <div class="dg-section-inner">
         <div class="dg-section-header">
           <p class="sq-label">How We Work</p>
-          <h2 id="dg-how-heading">Our Approach</h2>
+          <h2 id="dg-how-heading">Simple process</h2>
         </div>
 
         <div class="dg-process-steps">
           <div class="dg-step" data-reveal>
             <div class="dg-step__num">01</div>
-            <h3 class="dg-step__title">Discover</h3>
-            <p class="dg-step__desc">We understand your business, challenges, and goals. What problem are you actually trying to solve?</p>
+            <h3 class="dg-step__title">Listen</h3>
+            <p class="dg-step__desc">Understand the problem first.</p>
           </div>
           <div class="dg-step" data-reveal>
             <div class="dg-step__num">02</div>
-            <h3 class="dg-step__title">Understand</h3>
-            <p class="dg-step__desc">We identify root challenges and opportunities. Where can technology create the most value?</p>
+            <h3 class="dg-step__title">Plan</h3>
+            <p class="dg-step__desc">Decide what actually needs to be built.</p>
           </div>
           <div class="dg-step" data-reveal>
             <div class="dg-step__num">03</div>
-            <h3 class="dg-step__title">Strategize</h3>
-            <p class="dg-step__desc">We recommend the best solution—not necessarily what was requested. We explain our reasoning.</p>
+            <h3 class="dg-step__title">Build</h3>
+            <p class="dg-step__desc">Develop clean, fast and maintainable.</p>
           </div>
           <div class="dg-step" data-reveal>
             <div class="dg-step__num">04</div>
-            <h3 class="dg-step__title">Build</h3>
-            <p class="dg-step__desc">We design, develop, and test with transparency. You're involved throughout the process.</p>
+            <h3 class="dg-step__title">Support</h3>
+            <p class="dg-step__desc">Keep helping after launch.</p>
           </div>
-          <div class="dg-step" data-reveal>
-            <div class="dg-step__num">05</div>
-            <h3 class="dg-step__title">Deploy</h3>
-            <p class="dg-step__desc">We launch with confidence. Everything is tested, documented, and ready for production.</p>
-          </div>
-          <div class="dg-step" data-reveal>
-            <div class="dg-step__num">06</div>
-            <h3 class="dg-step__title">Grow</h3>
-            <p class="dg-step__desc">We support you long-term. Optimization, maintenance, training, and continuous improvement.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         WHY CHOOSE SQ
-    ════════════════════════════════════════ -->
-    <section class="dg-why-choose" aria-labelledby="dg-why-heading">
-      <div class="dg-section-inner">
-        <div class="dg-section-header">
-          <p class="sq-label">Why Choose SQ</p>
-          <h2 id="dg-why-heading">Why Businesses Choose SQ Interactive</h2>
-        </div>
-
-        <div class="dg-why-grid">
-          <article class="dg-why-card" data-reveal>
-            <h3 class="dg-why-card__title">Complete Solutions</h3>
-            <p class="dg-why-card__description">We handle websites, software, e-commerce, automation, and SEO—all from one trusted partner. No vendor juggling.</p>
-          </article>
-
-          <article class="dg-why-card" data-reveal>
-            <h3 class="dg-why-card__title">Founder-Led Oversight</h3>
-            <p class="dg-why-card__description">You work directly with Shazaib for strategy and quality oversight—not handed off to junior contractors.</p>
-          </article>
-
-          <article class="dg-why-card" data-reveal>
-            <h3 class="dg-why-card__title">Problem-First Approach</h3>
-            <p class="dg-why-card__description">We recommend solutions based on your business challenges, not on pushing services we want to sell.</p>
-          </article>
-
-          <article class="dg-why-card" data-reveal>
-            <h3 class="dg-why-card__title">Fast Delivery</h3>
-            <p class="dg-why-card__description">Optimized workflows and standardized processes mean faster turnaround than traditional agencies.</p>
-          </article>
-
-          <article class="dg-why-card" data-reveal>
-            <h3 class="dg-why-card__title">Long-Term Partnership</h3>
-            <p class="dg-why-card__description">We support you beyond launch with maintenance, optimization, training, and continuous improvement.</p>
-          </article>
-
-          <article class="dg-why-card" data-reveal>
-            <h3 class="dg-why-card__title">Proven Results</h3>
-            <p class="dg-why-card__description">Real case studies from construction, real estate, and hospitality. Measurable outcomes, not just promises.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -526,9 +401,9 @@
     <section class="dg-support" aria-label="Ongoing support">
       <div class="dg-section-inner">
         <div class="dg-support-content">
-          <h3 class="dg-support-title">Ongoing Support & Maintenance</h3>
+          <h3 class="dg-support-title">Ongoing Support</h3>
           <p class="dg-support-price">From PKR 25,000 / month</p>
-          <p class="dg-support-desc">Hosting, website & system maintenance, security monitoring, performance analytics, regular updates, and ongoing optimization to keep your digital infrastructure running smoothly.</p>
+          <p class="dg-support-desc">Hosting, maintenance, analytics, updates and ongoing improvements.</p>
         </div>
       </div>
     </section>
@@ -543,8 +418,7 @@
           <a href="../ai/" class="sq-world-link" aria-label="Explore AI and Automation">
             <div class="sq-world-link__content">
               <p class="sq-world-link__prompt">Want to make it smarter?</p>
-              <p class="sq-world-link__title">AI & Automation</p>
-              <p class="sq-world-link__description">AI-powered visualization, interior design automation, and intelligent business systems that learn and improve over time.</p>
+              <p class="sq-world-link__title">AI</p>
             </div>
             <div class="sq-world-link__action">
               <span class="sq-world-link__action-label">Explore AI</span>
@@ -557,8 +431,7 @@
           <a href="../immersive/" class="sq-world-link" aria-label="Explore Immersive experiences">
             <div class="sq-world-link__content">
               <p class="sq-world-link__prompt">Want to make it immersive?</p>
-              <p class="sq-world-link__title">Immersive Technology</p>
-              <p class="sq-world-link__description">360° virtual tours, VR walkthroughs, and interactive experiences that engage customers and accelerate sales.</p>
+              <p class="sq-world-link__title">Immersive</p>
             </div>
             <div class="sq-world-link__action">
               <span class="sq-world-link__action-label">Explore Immersive</span>
@@ -571,8 +444,7 @@
           <a href="../lab/" class="sq-world-link" aria-label="Visit SQ Lab">
             <div class="sq-world-link__content">
               <p class="sq-world-link__prompt">Curious what we're experimenting with?</p>
-              <p class="sq-world-link__title">Research & Innovation Lab</p>
-              <p class="sq-world-link__description">Experimental technologies, proprietary tools, and next-generation solutions that prepare your business for the future.</p>
+              <p class="sq-world-link__title">SQ Lab</p>
             </div>
             <div class="sq-world-link__action">
               <span class="sq-world-link__action-label">Visit SQ Lab</span>
@@ -692,15 +564,9 @@
   </a>
 
   <!-- Scripts -->
-  <script src="../js/main.js" defer></script>
   <script src="../js/nav.js" defer></script>
   <script src="../js/tracking.js" defer></script>
   <script src="../js/analytics.js" defer></script>
-  
-  <script>
-    // Auto-update year in footer
-    document.getElementById('sq-year').textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>

@@ -1,0 +1,283 @@
+/* ============================================================
+   SQ INTERACTIVE — SERVICES PAGE
+   Four-world service grid layout with reusable cards
+   ============================================================ */
+
+/* ══════════════════════════════════════════
+   SERVICES SECTION
+══════════════════════════════════════════ */
+
+.sq-services {
+  padding: var(--sq-space-24) var(--sq-space-4);
+}
+
+@media (min-width: 640px) {
+  .sq-services {
+    padding: var(--sq-space-32) var(--sq-space-6);
+  }
+}
+
+.sq-services__intro {
+  text-align: center;
+  margin-bottom: var(--sq-space-24);
+}
+
+.sq-services__intro-text {
+  font-family: var(--sq-font-serif);
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  font-weight: 400;
+  color: var(--sq-text);
+  line-height: 1.4;
+  max-width: 600px;
+  margin: var(--sq-space-3) auto 0;
+}
+
+/* ──────────────────────────────────────
+   WORLD SECTION
+────────────────────────────────────── */
+
+.sq-services__world {
+  margin-bottom: var(--sq-space-32);
+}
+
+@media (min-width: 768px) {
+  .sq-services__world {
+    margin-bottom: var(--sq-space-40);
+  }
+}
+
+/* World header */
+.sq-services__world-header {
+  margin-bottom: var(--sq-space-16);
+  padding-bottom: var(--sq-space-12);
+  border-bottom: 1px solid var(--sq-border-subtle);
+}
+
+.sq-services__world-number {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-xl);
+  font-weight: 600;
+  color: var(--sq-gold);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sq-space-2);
+}
+
+.sq-services__world-title {
+  font-family: var(--sq-font-serif);
+  font-size: clamp(1.875rem, 5vw, 2.25rem);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sq-space-2);
+}
+
+.sq-services__world-subtitle {
+  font-family: var(--sq-font-sans);
+  font-size: var(--sq-text-sm);
+  font-weight: 500;
+  color: var(--sq-text-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: var(--sq-space-4);
+}
+
+.sq-services__world-description {
+  font-family: var(--sq-font-sans);
+  font-size: var(--sq-text-base);
+  font-weight: 400;
+  color: var(--sq-text);
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0;
+}
+
+/* ──────────────────────────────────────
+   SERVICE CARDS GRID
+────────────────────────────────────── */
+
+.sq-services__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sq-space-4);
+}
+
+@media (min-width: 640px) {
+  .sq-services__cards {
+    gap: var(--sq-space-6);
+  }
+}
+
+@media (min-width: 768px) {
+  .sq-services__cards {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Digital: 4 columns */
+  .sq-services__world:nth-of-type(1) .sq-services__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* AI: 3 columns */
+  .sq-services__world:nth-of-type(2) .sq-services__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Immersive: 3 columns (2 full, 1 in next row) or wrap naturally */
+  .sq-services__world:nth-of-type(3) .sq-services__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Lab: 4 columns */
+  .sq-services__world:nth-of-type(4) .sq-services__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ──────────────────────────────────────
+   SERVICE CARD COMPONENT
+────────────────────────────────────── */
+
+.sq-service-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sq-space-4);
+  border-radius: var(--sq-radius-lg);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--sq-border-subtle);
+  text-decoration: none;
+  transition: all var(--sq-duration-base) var(--sq-ease);
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .sq-service-card {
+    padding: var(--sq-space-6);
+  }
+}
+
+.sq-service-card:hover {
+  background: rgba(212, 175, 55, 0.05);
+  border-color: var(--sq-border);
+  transform: translateY(-4px);
+}
+
+/* Card icon */
+.sq-service-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: var(--sq-space-4);
+  display: inline-block;
+}
+
+/* Card title */
+.sq-service-card__title {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-lg);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--sq-space-2);
+}
+
+/* Card description */
+.sq-service-card__desc {
+  font-family: var(--sq-font-sans);
+  font-size: var(--sq-text-sm);
+  font-weight: 400;
+  color: var(--sq-text-secondary);
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: var(--sq-space-4);
+}
+
+/* Card link */
+.sq-service-card__link {
+  font-family: var(--sq-font-sans);
+  font-size: var(--sq-text-sm);
+  font-weight: 500;
+  color: var(--sq-gold);
+  transition: all var(--sq-duration-fast) var(--sq-ease);
+}
+
+.sq-service-card:hover .sq-service-card__link {
+  color: var(--sq-text-strong);
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE ADJUSTMENTS
+══════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .sq-services__world-number {
+    font-size: var(--sq-text-lg);
+  }
+
+  .sq-services__world-title {
+    font-size: 1.5rem;
+  }
+
+  .sq-services__world-description {
+    font-size: var(--sq-text-sm);
+  }
+
+  .sq-service-card__title {
+    font-size: var(--sq-text-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .sq-services {
+    padding: var(--sq-space-16) var(--sq-space-3);
+  }
+
+  .sq-services__intro {
+    margin-bottom: var(--sq-space-16);
+  }
+
+  .sq-services__intro-text {
+    font-size: 1rem;
+  }
+
+  .sq-services__world {
+    margin-bottom: var(--sq-space-24);
+  }
+
+  .sq-services__world-header {
+    margin-bottom: var(--sq-space-12);
+    padding-bottom: var(--sq-space-8);
+  }
+
+  .sq-services__world-title {
+    font-size: 1.375rem;
+  }
+
+  .sq-services__cards {
+    gap: var(--sq-space-3);
+    grid-template-columns: 1fr;
+  }
+
+  .sq-service-card {
+    padding: var(--sq-space-3);
+  }
+
+  .sq-service-card__icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--sq-space-3);
+  }
+}
+
+/* ══════════════════════════════════════════
+   ANIMATION STATES
+══════════════════════════════════════════ */
+
+.sq-services__world {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.sq-services__world[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}

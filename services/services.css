@@ -1,0 +1,359 @@
+/* ============================================================
+   SQ INTERACTIVE — SERVICES PAGE STYLES
+   ============================================================ */
+
+/* ══════════════════════════════════════════
+   HERO / INTRO
+══════════════════════════════════════════ */
+
+.sq-services-hero {
+  padding-top: var(--sq-nav-height);
+  padding-block: var(--sq-space-12) var(--sq-space-16);
+  background: linear-gradient(135deg, rgba(10,10,10,1) 0%, rgba(20,15,30,0.4) 100%);
+  border-bottom: 1px solid var(--sq-border-subtle);
+}
+
+.sq-services-hero__content {
+  max-width: 900px;
+}
+
+.sq-services-hero__content .sq-label {
+  display: inline-block;
+  margin-bottom: var(--sq-space-4);
+}
+
+.sq-services-hero__content .sq-h1 {
+  margin-bottom: var(--sq-space-4);
+  color: var(--sq-text-strong);
+}
+
+.sq-services-hero__content .sq-text-lg {
+  color: var(--sq-text-secondary);
+  max-width: 720px;
+}
+
+@media (max-width: 640px) {
+  .sq-services-hero {
+    padding-block: var(--sq-space-8) var(--sq-space-10);
+  }
+
+  .sq-services-hero__content .sq-h1 {
+    font-size: var(--sq-text-3xl);
+  }
+}
+
+/* ══════════════════════════════════════════
+   WORLD SECTIONS
+══════════════════════════════════════════ */
+
+.sq-services-world {
+  padding-block: var(--sq-space-16);
+  border-bottom: 1px solid var(--sq-border-subtle);
+  background: var(--sq-bg);
+}
+
+.sq-services-world--alt {
+  background: linear-gradient(180deg, rgba(10,10,10,0.5) 0%, rgba(20,15,30,0.3) 100%);
+}
+
+.sq-services-world__header {
+  margin-bottom: var(--sq-space-12);
+  max-width: 900px;
+}
+
+.sq-services-world__header .sq-label {
+  display: inline-block;
+  margin-bottom: var(--sq-space-4);
+  text-transform: uppercase;
+  font-size: var(--sq-text-xs);
+  letter-spacing: 0.1em;
+}
+
+.sq-label--accent-1 {
+  color: var(--sq-gold);
+}
+
+.sq-label--accent-2 {
+  color: #7C3AED;
+}
+
+.sq-label--accent-3 {
+  color: #06B6D4;
+}
+
+.sq-label--accent-4 {
+  color: #EC4899;
+}
+
+.sq-services-world__header .sq-h2 {
+  margin-bottom: var(--sq-space-3);
+  color: var(--sq-text-strong);
+}
+
+.sq-services-world__header .sq-text-md {
+  color: var(--sq-text-secondary);
+  max-width: 720px;
+  font-size: var(--sq-text-base);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .sq-services-world {
+    padding-block: var(--sq-space-10);
+  }
+
+  .sq-services-world__header {
+    margin-bottom: var(--sq-space-8);
+  }
+
+  .sq-services-world__header .sq-h2 {
+    font-size: var(--sq-text-2xl);
+  }
+}
+
+/* ══════════════════════════════════════════
+   SERVICE CARDS GRID
+══════════════════════════════════════════ */
+
+.sq-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--sq-space-6);
+}
+
+@media (min-width: 1024px) {
+  .sq-services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--sq-space-8);
+  }
+}
+
+@media (max-width: 640px) {
+  .sq-services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--sq-space-4);
+  }
+}
+
+/* ══════════════════════════════════════════
+   SERVICE CARD
+══════════════════════════════════════════ */
+
+.sq-service-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sq-space-6);
+  border: 1px solid var(--sq-border-subtle);
+  border-radius: var(--sq-radius-lg);
+  background: rgba(255, 255, 255, 0.02);
+  transition: all var(--sq-duration-base) var(--sq-ease);
+  position: relative;
+  overflow: hidden;
+}
+
+.sq-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--sq-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--sq-duration-base) var(--sq-ease);
+}
+
+.sq-service-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--sq-border);
+  transform: translateY(-4px);
+}
+
+.sq-service-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Card color accents by world */
+.sq-service-card--digital::before {
+  background: var(--sq-gold);
+}
+
+.sq-service-card--ai::before {
+  background: #7C3AED;
+}
+
+.sq-service-card--immersive::before {
+  background: #06B6D4;
+}
+
+.sq-service-card--lab::before {
+  background: #EC4899;
+}
+
+/* Card header */
+.sq-service-card__header {
+  margin-bottom: var(--sq-space-3);
+}
+
+.sq-service-card__title {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-lg);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Card description */
+.sq-service-card__desc {
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 var(--sq-space-4) 0;
+  flex-grow: 1;
+}
+
+/* Card link */
+.sq-service-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sq-space-2);
+  font-size: var(--sq-text-sm);
+  font-weight: 600;
+  color: var(--sq-gold);
+  text-decoration: none;
+  transition: all var(--sq-duration-fast) var(--sq-ease);
+  margin-top: auto;
+}
+
+.sq-service-card__link:hover {
+  gap: var(--sq-space-3);
+  color: #F1C40F;
+}
+
+.sq-service-card__link span {
+  transition: transform var(--sq-duration-fast) var(--sq-ease);
+}
+
+.sq-service-card__link:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 640px) {
+  .sq-service-card {
+    padding: var(--sq-space-5);
+  }
+
+  .sq-service-card__title {
+    font-size: var(--sq-text-base);
+  }
+
+  .sq-service-card__desc {
+    font-size: var(--sq-text-xs);
+  }
+}
+
+/* ══════════════════════════════════════════
+   CTA SECTION (from components, ensure consistency)
+══════════════════════════════════════════ */
+
+.sq-cta {
+  padding-block: var(--sq-space-16);
+  background: linear-gradient(135deg, rgba(10,10,10,1) 0%, rgba(20,15,30,0.6) 100%);
+  border-top: 1px solid var(--sq-border-subtle);
+}
+
+.sq-cta__inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.sq-cta__inner .sq-label {
+  display: inline-block;
+  margin-bottom: var(--sq-space-4);
+}
+
+.sq-cta__heading {
+  margin-bottom: var(--sq-space-4);
+  color: var(--sq-text-strong);
+}
+
+.sq-cta__sub {
+  font-size: var(--sq-text-lg);
+  color: var(--sq-text-secondary);
+  margin-bottom: var(--sq-space-8);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sq-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sq-space-4);
+  justify-content: center;
+  margin-bottom: var(--sq-space-6);
+}
+
+.sq-cta__note {
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-tertiary);
+}
+
+@media (max-width: 640px) {
+  .sq-cta {
+    padding-block: var(--sq-space-10);
+  }
+
+  .sq-cta__heading {
+    font-size: var(--sq-text-2xl);
+  }
+
+  .sq-cta__sub {
+    font-size: var(--sq-text-base);
+    margin-bottom: var(--sq-space-6);
+  }
+
+  .sq-cta__actions {
+    flex-direction: column;
+    gap: var(--sq-space-3);
+  }
+
+  .sq-cta__actions .sq-btn {
+    width: 100%;
+  }
+}
+
+/* ══════════════════════════════════════════
+   ACCESSIBILITY
+══════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .sq-service-card,
+  .sq-service-card::before,
+  .sq-service-card__link,
+  .sq-service-card__link span {
+    transition: none;
+  }
+
+  .sq-service-card:hover {
+    transform: none;
+  }
+
+  .sq-service-card:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+/* Focus states for keyboard navigation */
+.sq-service-card__link:focus {
+  outline: 2px solid var(--sq-gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.sq-service-card:focus-within {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--sq-gold);
+}
