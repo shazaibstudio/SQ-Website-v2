@@ -52,6 +52,7 @@
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/unified-nav.css">
   <link rel="stylesheet" href="../css/services.css">
 
   <style>
@@ -88,39 +89,9 @@
   <!-- Scroll progress -->
   <div class="sq-scroll-progress" aria-hidden="true"></div>
 
-  <!-- Navigation -->
-  <nav class="sq-nav" aria-label="Main navigation">
-    <div class="sq-nav__inner">
-      <a href="/" class="sq-nav__logo" aria-label="SQ Interactive — home">
-        <div class="sq-nav__logo-mark">
-          <img src="../images/no-background.png" alt="" width="auto" height="36" aria-hidden="true">
-        </div>
-        <span class="sq-nav__logo-text">SQ <span>Interactive</span></span>
-      </a>
-
-      <div class="sq-nav__links">
-        <a href="/work/" class="sq-nav__link">Work</a>
-        <a href="/services/" class="sq-nav__link sq-nav__link--active" aria-current="page">Services</a>
-        <a href="/how-we-work/" class="sq-nav__link">How We Work</a>
-        <a href="/about/" class="sq-nav__link">About</a>
-      </div>
-
-      <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
-        <div class="sq-nav__toggle-icon" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
-    </div>
-
-    <div class="sq-nav__mobile" id="sq-mobile-nav" role="navigation" aria-label="Mobile navigation">
-      <a href="/work/" class="sq-nav__mobile-link">Work</a>
-      <a href="/services/" class="sq-nav__mobile-link" aria-current="page">Services</a>
-      <a href="/how-we-work/" class="sq-nav__mobile-link">How We Work</a>
-      <a href="/about/" class="sq-nav__mobile-link">About</a>
-    </div>
-  </nav>
+  <!-- Navigation (rendered dynamically by nav-renderer.js) -->
+  <script src="js/nav-renderer.js" defer></script>
+  <div id="sq-google-translate-element" style="display: none;"></div>
 
   <main id="main">
 
@@ -409,6 +380,8 @@
   </a>
 
   <!-- Scripts -->
+  <script src="../js/unified-nav.js" defer></script>
+  <script src="../js/translation.js" defer></script>
   <script src="../js/main.js"></script>
   <script src="../js/nav.js"></script>
 

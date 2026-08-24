@@ -25,35 +25,8 @@
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="sq-scroll-progress" aria-hidden="true"></div>
 
-  <nav class="sq-nav" aria-label="Main navigation">
-    <div class="sq-nav__inner">
-      <a href="/" class="sq-nav__logo" aria-label="SQ Interactive — home">
-        <div class="sq-nav__logo-mark">
-          <img src="../images/no-background.png" alt="" width="auto" height="36" aria-hidden="true">
-        </div>
-        <span class="sq-nav__logo-text">SQ <span>Interactive</span></span>
-      </a>
-      <div class="sq-nav__links">
-        <a href="/work/"        class="sq-nav__link sq-nav__link--active" aria-current="page">Work</a>
-        <a href="/services/"    class="sq-nav__link">Services</a>
-        <a href="/how-we-work/" class="sq-nav__link">How We Work</a>
-        <a href="/about/"       class="sq-nav__link">About</a>
-      </div>
-      <a href="/contact/" class="sq-nav__cta sq-btn sq-btn--primary sq-btn--sm" data-cta="nav_cta">Tell us your challenge</a>
-      <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
-        <div class="sq-nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></div>
-      </button>
-    </div>
-    <div class="sq-nav__mobile" id="sq-mobile-nav">
-      <a href="/work/"        class="sq-nav__mobile-link">Work</a>
-      <a href="/services/"    class="sq-nav__mobile-link">Services</a>
-      <a href="/how-we-work/" class="sq-nav__mobile-link">How We Work</a>
-      <a href="/about/"       class="sq-nav__mobile-link">About</a>
-      <div class="sq-nav__mobile-cta">
-        <a href="/contact/" class="sq-btn sq-btn--primary sq-btn--sm" style="width:100%; justify-content:center;">Tell us your challenge</a>
-      </div>
-    </div>
-  </nav>
+  <!-- Navigation (rendered dynamically by nav-renderer.js) -->
+  <script src="../js/nav-renderer.js" defer></script>
 
   <main id="main">
     <!-- HERO -->
@@ -124,8 +97,6 @@
           <ul class="sq-footer__links">
             <li><a href="../work/"        class="sq-footer__link">Work</a></li>
             <li><a href="../how-we-work/" class="sq-footer__link">How We Work</a></li>
-            <li><a href="../about/"       class="sq-footer__link">About</a></li>
-            <li><a href="../contact/"     class="sq-footer__link">Contact</a></li>
           </ul>
         </div>
       </div>

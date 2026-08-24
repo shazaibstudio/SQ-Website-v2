@@ -72,6 +72,7 @@
   object-fit: contain;
 }
 
+/* Logo text - SQ white, Interactive gold */
 .sq-nav__logo-text {
   font-family: var(--sq-font-sans);
   font-size: var(--sq-text-base);
@@ -80,10 +81,9 @@
   letter-spacing: -0.01em;
 }
 
-@media (max-width: 480px) {
-  .sq-nav__logo-text span {
-    display: none;
-  }
+/* Gold color for "Interactive" span */
+.sq-nav__logo-text span {
+  color: var(--sq-gold);
 }
 
 /* Desktop links */
