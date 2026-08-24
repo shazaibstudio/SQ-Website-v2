@@ -532,3 +532,279 @@ a.sq-contact-card--primary:hover .sq-contact-card__arrow {
   line-height: 1;
   font-family: var(--sq-font-serif);
 }
+
+
+/* ── Breadcrumb Navigation ── */
+.sq-breadcrumb {
+  padding: var(--sq-space-4) 0;
+  border-bottom: 1px solid var(--sq-border);
+  background: var(--sq-bg-deep);
+  font-size: var(--sq-text-xs);
+  color: var(--sq-text-muted);
+}
+
+.sq-breadcrumb a {
+  color: var(--sq-text-secondary);
+  text-decoration: none;
+  transition: color var(--sq-transition-fast);
+}
+
+.sq-breadcrumb a:hover {
+  color: var(--sq-gold);
+}
+
+.sq-breadcrumb span {
+  margin: 0 var(--sq-space-2);
+  color: var(--sq-text-muted);
+}
+
+/* ── Related Service Cards Grid ── */
+.sq-related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sq-space-4);
+}
+
+@media (min-width: 640px) {
+  .sq-related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sq-related-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Related Project Card ── */
+.sq-related-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--sq-bg-alt);
+  border-radius: var(--sq-radius-lg);
+  border: 1px solid var(--sq-border);
+  overflow: hidden;
+  transition: all var(--sq-transition-norm);
+  text-decoration: none;
+  color: inherit;
+}
+
+.sq-related-card:hover {
+  border-color: var(--sq-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.1);
+}
+
+.sq-related-card__image {
+  position: relative;
+  overflow: hidden;
+  background: var(--sq-bg-dark);
+  aspect-ratio: 1.5;
+}
+
+.sq-related-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--sq-transition-norm);
+}
+
+.sq-related-card:hover .sq-related-card__image img {
+  transform: scale(1.05);
+}
+
+.sq-related-card__title {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-base);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  padding: var(--sq-space-4) var(--sq-space-4) 0;
+}
+
+.sq-related-card__description {
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-secondary);
+  padding: var(--sq-space-2) var(--sq-space-4) var(--sq-space-4);
+  flex: 1;
+}
+
+.sq-related-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sq-space-2);
+  padding: var(--sq-space-4);
+  color: var(--sq-gold);
+  font-size: var(--sq-text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--sq-transition-fast);
+}
+
+.sq-related-card:hover .sq-related-card__link {
+  gap: var(--sq-space-3);
+}
+
+/* ── Service Card (Link style) ── */
+.sq-service-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sq-space-2);
+  padding: var(--sq-space-6);
+  background: var(--sq-surface);
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--sq-transition-norm);
+  position: relative;
+}
+
+.sq-service-card:hover {
+  border-color: var(--sq-gold);
+  background: var(--sq-bg-alt);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+}
+
+.sq-service-card h3 {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-base);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  margin: 0;
+}
+
+.sq-service-card p {
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sq-service-card__arrow {
+  position: absolute;
+  top: var(--sq-space-6);
+  right: var(--sq-space-6);
+  color: var(--sq-gold);
+  transition: all var(--sq-transition-fast);
+  opacity: 0;
+}
+
+.sq-service-card:hover .sq-service-card__arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* ── Section Heading (for service & related sections) ── */
+.sq-section-heading {
+  font-family: var(--sq-font-serif);
+  font-size: clamp(var(--sq-text-2xl), 4vw, var(--sq-text-3xl));
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  line-height: var(--sq-leading-snug);
+  margin-bottom: var(--sq-space-10);
+  max-width: 52ch;
+}
+
+/* ── Hero CTA Actions ── */
+.sq-hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sq-space-3);
+  margin-top: var(--sq-space-8);
+}
+
+/* ── About Section Grid ── */
+.sq-about-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sq-space-10);
+}
+
+@media (min-width: 768px) {
+  .sq-about-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sq-about-section__heading {
+  font-family: var(--sq-font-serif);
+  font-size: clamp(var(--sq-text-2xl), 4vw, var(--sq-text-3xl));
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  line-height: var(--sq-leading-snug);
+  margin-bottom: var(--sq-space-4);
+  max-width: 52ch;
+}
+
+.sq-about-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sq-space-3);
+}
+
+.sq-about-section__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sq-space-3);
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-secondary);
+  line-height: 1.6;
+}
+
+.sq-about-section__list li::before {
+  content: '→';
+  color: var(--sq-gold);
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+/* ── Process Grid (for service pages) ── */
+.sq-process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sq-space-6);
+}
+
+@media (min-width: 640px) {
+  .sq-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sq-process-step {
+  background: var(--sq-bg-alt);
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius-lg);
+  padding: var(--sq-space-6);
+  display: flex;
+  flex-direction: column;
+}
+
+.sq-process-step__number {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-2xl);
+  font-weight: 600;
+  color: var(--sq-gold);
+  margin-bottom: var(--sq-space-3);
+  line-height: 1;
+}
+
+.sq-process-step__title {
+  font-family: var(--sq-font-serif);
+  font-size: var(--sq-text-lg);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  margin-bottom: var(--sq-space-2);
+}
+
+.sq-process-step__desc {
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
