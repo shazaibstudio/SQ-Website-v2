@@ -291,7 +291,7 @@
 }
 
 /* ══════════════════════════════════════════
-   WHAT WE BUILD - SERVICE CARDS
+   WHAT WE BUILD - CAPABILITIES GRID
 ══════════════════════════════════════════ */
 
 .dg-what-we-build {
@@ -299,6 +299,130 @@
   border-top: 1px solid var(--sq-border-subtle);
   border-bottom: 1px solid var(--sq-border-subtle);
 }
+
+.dg-capabilities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sq-space-4);
+}
+
+@media (min-width: 480px) {
+  .dg-capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 640px) {
+  .dg-capabilities-grid {
+    gap: var(--sq-space-5);
+  }
+}
+
+@media (min-width: 768px) {
+  .dg-capabilities-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sq-space-5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dg-capabilities-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--sq-space-6);
+  }
+}
+
+.dg-capability-tile {
+  display: flex;
+  flex-direction: column;
+  background: var(--sq-surface);
+  border: 1px solid var(--sq-border);
+  border-radius: var(--sq-radius-xl);
+  overflow: hidden;
+  transition: border-color var(--sq-duration-base) var(--sq-ease), transform var(--sq-duration-base) var(--sq-ease), box-shadow var(--sq-duration-base) var(--sq-ease), background var(--sq-duration-base) var(--sq-ease);
+}
+
+@media (min-width: 768px) {
+  .dg-capability-tile {
+    min-height: 360px;
+  }
+}
+
+.dg-capability-tile:hover {
+  border-color: var(--sq-gold-border);
+  transform: translateY(-5px);
+  background: var(--sq-surface-raised);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+
+.dg-capability-tile:focus-visible {
+  outline: 2px solid var(--sq-gold);
+  outline-offset: 3px;
+}
+
+.dg-capability-tile__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--sq-bg-deep);
+  flex-shrink: 0;
+}
+
+.dg-capability-tile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--sq-duration-slow) var(--sq-ease);
+}
+
+.dg-capability-tile:hover .dg-capability-tile__img img {
+  transform: scale(1.05);
+}
+
+.dg-capability-tile__body {
+  padding: var(--sq-space-4) var(--sq-space-5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .dg-capability-tile__body {
+    padding: var(--sq-space-5) var(--sq-space-6);
+  }
+}
+
+@media (min-width: 768px) {
+  .dg-capability-tile__body {
+    padding: var(--sq-space-6) var(--sq-space-7);
+  }
+}
+
+.dg-capability-tile__title {
+  font-size: var(--sq-text-base);
+  font-weight: 600;
+  color: var(--sq-text-strong);
+  margin-bottom: var(--sq-space-2);
+  line-height: var(--sq-leading-tight);
+}
+
+@media (min-width: 768px) {
+  .dg-capability-tile__title {
+    font-size: var(--sq-text-lg);
+  }
+}
+
+.dg-capability-tile__desc {
+  font-size: var(--sq-text-sm);
+  color: var(--sq-text-secondary);
+  line-height: var(--sq-leading-base);
+  margin-top: auto;
+}
+
+/* ══════════════════════════════════════════
+   SERVICE CARDS - LEGACY
+══════════════════════════════════════════ */
 
 .dg-services-grid {
   display: grid;
