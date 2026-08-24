@@ -34,12 +34,22 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
 
     revealEls.forEach(function (el) {
       el.classList.add('will-reveal');
       observer.observe(el);
     });
+    
+    // Ensure content is revealed immediately if already in viewport
+    setTimeout(function() {
+      revealEls.forEach(function (el) {
+        if (!el.classList.contains('is-revealed') && observer) {
+          observer.unobserve(el);
+          el.classList.add('is-revealed');
+        }
+      });
+    }, 100);
   } else {
     /* Reduced motion or no IntersectionObserver — show everything immediately */
     document.querySelectorAll('[data-reveal]').forEach(function (el) {

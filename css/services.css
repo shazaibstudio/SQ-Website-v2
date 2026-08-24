@@ -188,21 +188,56 @@
   font-weight: 400;
   color: var(--sq-text-secondary);
   line-height: 1.5;
-  flex-grow: 1;
+  flex-grow: 0;
   margin-bottom: var(--sq-space-4);
 }
 
-/* Card link */
-.sq-service-card__link {
-  font-family: var(--sq-font-sans);
-  font-size: var(--sq-text-sm);
-  font-weight: 500;
-  color: var(--sq-gold);
-  transition: all var(--sq-duration-fast) var(--sq-ease);
+/* Card features list */
+.sq-service-card__features {
+  list-style: none;
+  padding: 0;
+  margin: var(--sq-space-4) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sq-space-2);
+  flex-grow: 1;
 }
 
-.sq-service-card:hover .sq-service-card__link {
-  color: var(--sq-text-strong);
+.sq-service-card__features li {
+  font-family: var(--sq-font-sans);
+  font-size: var(--sq-text-xs);
+  color: var(--sq-text-secondary);
+  line-height: 1.4;
+  padding-left: var(--sq-space-3);
+  position: relative;
+}
+
+.sq-service-card__features li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: var(--sq-gold);
+  font-size: 0.35rem;
+  top: 0.5em;
+}
+
+/* Coming soon text */
+.sq-services__world-coming {
+  font-size: var(--sq-text-base);
+  color: var(--sq-text-secondary);
+  line-height: 1.6;
+  margin: var(--sq-space-8) 0;
+  font-style: italic;
+}
+
+.sq-link {
+  color: var(--sq-gold);
+  text-decoration: none;
+  transition: color var(--sq-duration-fast);
+}
+
+.sq-link:hover {
+  color: var(--sq-gold-light);
 }
 
 /* ══════════════════════════════════════════
