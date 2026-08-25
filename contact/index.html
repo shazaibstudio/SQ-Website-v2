@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/unified-nav.css">
   <link rel="stylesheet" href="../css/contact.css">
   <link rel="icon" type="image/x-icon"       href="../SQ_Interactive_Favicon_Pack/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16"   href="../SQ_Interactive_Favicon_Pack/favicon-16x16.png">
@@ -23,29 +24,323 @@
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="sq-scroll-progress" aria-hidden="true"></div>
-  <nav class="sq-nav" aria-label="Main navigation">
+  <header>
+
+  <nav
+    class="sq-nav"
+    aria-label="Main navigation"
+  >
+
     <div class="sq-nav__inner">
-      <a href="/" class="sq-nav__logo" aria-label="SQ Interactive — home">
+
+      <!-- ======================================================
+           BRAND
+           ====================================================== -->
+
+      <a
+        href="/"
+        class="sq-nav__logo"
+        aria-label="SQ Interactive — Home"
+      >
+
         <div class="sq-nav__logo-mark">
-          <img src="../images/no-background.png" alt="" width="auto" height="36" aria-hidden="true">
+
+          <img
+            src="/images/no-background.png"
+            alt=""
+            width="36"
+            height="36"
+            aria-hidden="true"
+          >
+
         </div>
-        <span class="sq-nav__logo-text">SQ <span>Interactive</span></span>
+
+        <span class="sq-nav__logo-text">
+          SQ <span>Interactive</span>
+        </span>
+
       </a>
+
+      <!-- ======================================================
+           DESKTOP NAVIGATION
+           ====================================================== -->
+
       <div class="sq-nav__links">
-        <a href="/work/"        class="sq-nav__link">Work</a>
-        <a href="/services/"    class="sq-nav__link">Services</a>
-        <a href="/how-we-work/" class="sq-nav__link">How We Work</a>
+
+        <!-- HOME -->
+
+        <a href="/" class="sq-nav__link" data-sq-nav-link>Home</a>
+
+        <!-- SERVICES -->
+
+        <div class="sq-nav__services-wrapper">
+
+          <button
+            id="sq-services-btn"
+            class="sq-nav__link"
+            type="button"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            aria-controls="sq-services-popup"
+          >
+
+            <span>Services</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+
+          </button>
+
+          <!-- DESKTOP SERVICES DROPDOWN -->
+
+          <div
+            id="sq-services-popup"
+            class="sq-services-popup hidden"
+            role="menu"
+            aria-label="Services menu"
+          >
+
+            <a href="/services/" class="sq-services-popup__all" role="menuitem" data-sq-nav-link>All Services</a>
+
+            <div class="sq-services-popup__divider"></div>
+
+            <!-- DIGITAL -->
+            <button type="button" class="sq-services-popup__world-btn" aria-expanded="false" aria-controls="sq-desktop-digital">
+              <span>Digital</span>
+              <span class="sq-popup-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div id="sq-desktop-digital" class="sq-services-popup__world-links">
+              <a href="/digital/website-development/" class="sq-services-popup__link" role="menuitem">Website Development</a>
+              <a href="/digital/e-commerce/" class="sq-services-popup__link" role="menuitem">E-Commerce</a>
+              <a href="/digital/custom-software/" class="sq-services-popup__link" role="menuitem">Custom Software</a>
+              <a href="/digital/ui-ux-experiences/" class="sq-services-popup__link" role="menuitem">UI/UX Experiences</a>
+              <a href="/digital/seo-digital-growth/" class="sq-services-popup__link" role="menuitem">SEO &amp; Digital Growth</a>
+              <a href="/digital/automation-integration/" class="sq-services-popup__link" role="menuitem">Automation &amp; Integration</a>
+            </div>
+
+            <!-- AI -->
+            <button type="button" class="sq-services-popup__world-btn" aria-expanded="false" aria-controls="sq-desktop-ai">
+              <span>AI</span>
+              <span class="sq-popup-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div id="sq-desktop-ai" class="sq-services-popup__world-links">
+              <a href="/ai/ai-systems-models/" class="sq-services-popup__link" role="menuitem">AI Systems &amp; Models</a>
+              <a href="/ai/intelligent-automation/" class="sq-services-popup__link" role="menuitem">Intelligent Automation</a>
+              <a href="/ai/data-intelligence/" class="sq-services-popup__link" role="menuitem">Data Intelligence</a>
+              <a href="/ai/ai-integration/" class="sq-services-popup__link" role="menuitem">AI Integration</a>
+              <a href="/ai/ai-content/" class="sq-services-popup__link" role="menuitem">AI Content</a>
+              <a href="/ai/process-optimization/" class="sq-services-popup__link" role="menuitem">Process Optimization</a>
+            </div>
+
+            <!-- IMMERSIVE -->
+            <button type="button" class="sq-services-popup__world-btn" aria-expanded="false" aria-controls="sq-desktop-immersive">
+              <span>Immersive</span>
+              <span class="sq-popup-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div id="sq-desktop-immersive" class="sq-services-popup__world-links">
+              <a href="/immersive/virtual-reality/" class="sq-services-popup__link" role="menuitem">Virtual Reality</a>
+              <a href="/immersive/augmented-reality/" class="sq-services-popup__link" role="menuitem">Augmented Reality</a>
+              <a href="/immersive/3d-visualization/" class="sq-services-popup__link" role="menuitem">3D Visualization</a>
+              <a href="/immersive/360-experiences/" class="sq-services-popup__link" role="menuitem">360° Experiences</a>
+              <a href="/immersive/interactive-installation/" class="sq-services-popup__link" role="menuitem">Interactive Installation</a>
+              <a href="/immersive/web-immersion/" class="sq-services-popup__link" role="menuitem">Web Immersion</a>
+              <a href="/immersive/vr-staging/" class="sq-services-popup__link" role="menuitem">VR Staging</a>
+              <a href="/immersive/furniture-scanning/" class="sq-services-popup__link" role="menuitem">Furniture Scanning</a>
+            </div>
+
+            <!-- LAB -->
+            <button type="button" class="sq-services-popup__world-btn" aria-expanded="false" aria-controls="sq-desktop-lab">
+              <span>Lab</span>
+              <span class="sq-popup-arrow" aria-hidden="true">▾</span>
+            </button>
+            <div id="sq-desktop-lab" class="sq-services-popup__world-links">
+              <a href="/lab/ai-research/" class="sq-services-popup__link" role="menuitem">AI Research</a>
+              <a href="/lab/3d-tech/" class="sq-services-popup__link" role="menuitem">3D Technology</a>
+              <a href="/lab/no-code-platforms/" class="sq-services-popup__link" role="menuitem">No-Code Platforms</a>
+              <a href="/lab/web-performance/" class="sq-services-popup__link" role="menuitem">Web Performance</a>
+              <a href="/lab/ar-vr-innovation/" class="sq-services-popup__link" role="menuitem">AR/VR Innovation</a>
+              <a href="/lab/design-systems/" class="sq-services-popup__link" role="menuitem">Design Systems</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- WORK -->
+        <a href="/work/" class="sq-nav__link" data-sq-nav-link>Work</a>
+
+        <!-- HOW WE WORK -->
+        <a href="/how-we-work/" class="sq-nav__link" data-sq-nav-link>How We Work</a>
+
+        <!-- ABOUT -->
+        <a href="/about/" class="sq-nav__link" data-sq-nav-link>About</a>
+
+        <!-- CONTACT -->
+        <a href="/contact/" class="sq-nav__link" data-sq-nav-link>Contact</a>
+
+        <!-- DESKTOP LANGUAGE -->
+
+        <div class="sq-nav__lang-buttons">
+
+          <button
+            id="sq-lang-en"
+            class="sq-lang-btn sq-lang-btn--active"
+            type="button"
+            aria-label="English"
+            aria-pressed="true"
+          >
+            EN
+          </button>
+
+          <button
+            id="sq-lang-ur"
+            class="sq-lang-btn"
+            type="button"
+            aria-label="Urdu"
+            aria-pressed="false"
+          >
+            UR
+          </button>
+
+        </div>
+
       </div>
-      <button class="sq-nav__toggle" aria-expanded="false" aria-controls="sq-mobile-nav" aria-label="Open menu">
-        <div class="sq-nav__toggle-icon" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <!-- ======================================================
+           MOBILE MENU TOGGLE
+           ====================================================== -->
+
+      <button
+        id="sq-mobile-menu-toggle"
+        class="sq-nav__mobile-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="sq-mobile-menu"
+        aria-label="Open menu"
+      >
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+
       </button>
+
     </div>
-    <div class="sq-nav__mobile" id="sq-mobile-nav">
-      <a href="/work/"        class="sq-nav__mobile-link">Work</a>
-      <a href="/services/"    class="sq-nav__mobile-link">Services</a>
-      <a href="/how-we-work/" class="sq-nav__mobile-link">How We Work</a>
+
+    <!-- ========================================================
+         MOBILE NAVIGATION
+         ======================================================== -->
+
+    <div id="sq-mobile-menu" class="sq-nav__mobile" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+
+      <a href="/" class="sq-nav__mobile-link" data-sq-nav-link>Home</a>
+      <a href="/work/" class="sq-nav__mobile-link" data-sq-nav-link>Work</a>
+      <a href="/how-we-work/" class="sq-nav__mobile-link" data-sq-nav-link>How We Work</a>
+      <a href="/about/" class="sq-nav__mobile-link" data-sq-nav-link>About</a>
+      <a href="/contact/" class="sq-nav__mobile-link" data-sq-nav-link>Contact</a>
+
+      <!-- MOBILE SERVICES -->
+
+      <button id="sq-mobile-services-toggle" class="sq-nav__mobile-services-toggle" type="button" aria-expanded="false" aria-controls="sq-mobile-services">
+        <span>Services</span>
+        <span class="sq-mobile-services__toggle-icon" aria-hidden="true">+</span>
+      </button>
+
+      <div id="sq-mobile-services" class="sq-mobile-services">
+
+        <a href="/services/" class="sq-mobile-services__link" data-sq-nav-link>All Services</a>
+
+        <!-- DIGITAL -->
+        <button type="button" class="sq-mobile-services__world-toggle" data-world-toggle="sq-mobile-digital" aria-expanded="false" aria-controls="sq-mobile-digital">
+          <span>01 — Digital</span>
+          <span class="sq-mobile-services__world-icon" aria-hidden="true">+</span>
+        </button>
+        <div id="sq-mobile-digital" class="sq-mobile-services__world-menu">
+          <a href="/digital/website-development/" class="sq-mobile-services__world-link">Website Development</a>
+          <a href="/digital/e-commerce/" class="sq-mobile-services__world-link">E-Commerce</a>
+          <a href="/digital/custom-software/" class="sq-mobile-services__world-link">Custom Software</a>
+          <a href="/digital/ui-ux-experiences/" class="sq-mobile-services__world-link">UI/UX Experiences</a>
+          <a href="/digital/seo-digital-growth/" class="sq-mobile-services__world-link">SEO &amp; Digital Growth</a>
+          <a href="/digital/automation-integration/" class="sq-mobile-services__world-link">Automation &amp; Integration</a>
+        </div>
+
+        <!-- AI -->
+        <button type="button" class="sq-mobile-services__world-toggle" data-world-toggle="sq-mobile-ai" aria-expanded="false" aria-controls="sq-mobile-ai">
+          <span>02 — AI</span>
+          <span class="sq-mobile-services__world-icon" aria-hidden="true">+</span>
+        </button>
+        <div id="sq-mobile-ai" class="sq-mobile-services__world-menu">
+          <a href="/ai/ai-systems-models/" class="sq-mobile-services__world-link">AI Systems &amp; Models</a>
+          <a href="/ai/intelligent-automation/" class="sq-mobile-services__world-link">Intelligent Automation</a>
+          <a href="/ai/data-intelligence/" class="sq-mobile-services__world-link">Data Intelligence</a>
+          <a href="/ai/ai-integration/" class="sq-mobile-services__world-link">AI Integration</a>
+          <a href="/ai/ai-content/" class="sq-mobile-services__world-link">AI Content</a>
+          <a href="/ai/process-optimization/" class="sq-mobile-services__world-link">Process Optimization</a>
+        </div>
+
+        <!-- IMMERSIVE -->
+        <button type="button" class="sq-mobile-services__world-toggle" data-world-toggle="sq-mobile-immersive" aria-expanded="false" aria-controls="sq-mobile-immersive">
+          <span>03 — Immersive</span>
+          <span class="sq-mobile-services__world-icon" aria-hidden="true">+</span>
+        </button>
+        <div id="sq-mobile-immersive" class="sq-mobile-services__world-menu">
+          <a href="/immersive/virtual-reality/" class="sq-mobile-services__world-link">Virtual Reality</a>
+          <a href="/immersive/augmented-reality/" class="sq-mobile-services__world-link">Augmented Reality</a>
+          <a href="/immersive/3d-visualization/" class="sq-mobile-services__world-link">3D Visualization</a>
+          <a href="/immersive/360-experiences/" class="sq-mobile-services__world-link">360° Experiences</a>
+          <a href="/immersive/interactive-installation/" class="sq-mobile-services__world-link">Interactive Installation</a>
+          <a href="/immersive/web-immersion/" class="sq-mobile-services__world-link">Web Immersion</a>
+          <a href="/immersive/vr-staging/" class="sq-mobile-services__world-link">VR Staging</a>
+          <a href="/immersive/furniture-scanning/" class="sq-mobile-services__world-link">Furniture Scanning</a>
+        </div>
+
+        <!-- LAB -->
+        <button type="button" class="sq-mobile-services__world-toggle" data-world-toggle="sq-mobile-lab" aria-expanded="false" aria-controls="sq-mobile-lab">
+          <span>04 — Lab</span>
+          <span class="sq-mobile-services__world-icon" aria-hidden="true">+</span>
+        </button>
+        <div id="sq-mobile-lab" class="sq-mobile-services__world-menu">
+          <a href="/lab/ai-research/" class="sq-mobile-services__world-link">AI Research</a>
+          <a href="/lab/3d-tech/" class="sq-mobile-services__world-link">3D Technology</a>
+          <a href="/lab/no-code-platforms/" class="sq-mobile-services__world-link">No-Code Platforms</a>
+          <a href="/lab/web-performance/" class="sq-mobile-services__world-link">Web Performance</a>
+          <a href="/lab/ar-vr-innovation/" class="sq-mobile-services__world-link">AR/VR Innovation</a>
+          <a href="/lab/design-systems/" class="sq-mobile-services__world-link">Design Systems</a>
+        </div>
+
+      </div>
+
+      <!-- MOBILE LANGUAGE -->
+
+      <div class="sq-nav__mobile-lang">
+        <button id="sq-mobile-lang-en" class="sq-lang-btn sq-lang-btn--active" type="button" aria-label="English" aria-pressed="true">EN</button>
+        <button id="sq-mobile-lang-ur" class="sq-lang-btn" type="button" aria-label="Urdu" aria-pressed="false">UR</button>
+      </div>
+
     </div>
+
   </nav>
+
+</header>
+
   <main id="main">
 
     <!-- HERO -->
@@ -256,5 +551,6 @@
       }
     });
   </script>
+  <script src="../js/unified-nav.js" defer></script>
 </body>
 </html>
