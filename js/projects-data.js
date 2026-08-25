@@ -18,7 +18,7 @@ const SQ_PROJECTS = [
     solution: "Built a custom responsive website with project gallery, team showcase, service descriptions, and integrated contact forms. Optimized for SEO to improve search visibility for construction-related keywords in their region.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "Google Analytics"],
     image: "images/website/designline 2.png",
-    images: ["images/website/designline 2.png", "images/website/designline.png"],
+    images: ["images/website/designline 2.png", "images/website/designline 2.png"],
     video: null,
     link: "https://designlineconstruction.com/",
     status: "live",

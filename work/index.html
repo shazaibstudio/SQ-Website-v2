@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/unified-nav.css">
   <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/portfolio.css">
   <link rel="icon" type="image/x-icon" href="../SQ_Interactive_Favicon_Pack/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../SQ_Interactive_Favicon_Pack/favicon-32x32.png">
@@ -345,14 +346,47 @@
 
 
   <main id="main">
-    <!-- HERO -->
-    <div class="sq-page-hero">
-      <div class="sq-container">
-        <span class="sq-label">Our Work</span>
-        <h1>Real projects solving real problems.</h1>
-        <p>Case studies showing how we've helped businesses improve through technology.</p>
+    <!-- HERO WITH VIDEO -->
+    <section class="sq-hero" aria-labelledby="work-hero-heading">
+      <div class="sq-hero__bg" aria-hidden="true"></div>
+      <video class="sq-hero__video"
+             autoplay muted loop playsinline
+             aria-hidden="true"
+             poster="../images/no-background.png">
+        <source src="../videos/casestudy.mp4" type="video/mp4">
+      </video>
+      <div class="sq-hero__overlay" aria-hidden="true"></div>
+
+      <div class="sq-hero__content">
+        <div class="sq-hero__text">
+          <p class="sq-label sq-hero__eyebrow" data-reveal>Our Work</p>
+
+          <h1 class="sq-hero__heading" id="work-hero-heading" data-reveal>
+            Real projects solving <em>real problems.</em>
+          </h1>
+
+          <p class="sq-hero__subheading" data-reveal>
+            Case studies showing how we've helped businesses improve through technology.
+          </p>
+
+          <div class="sq-hero__actions" data-reveal>
+            <a href="../contact/" class="sq-btn sq-btn--primary sq-btn--lg" data-cta="work_hero_primary">Start a conversation</a>
+            <a href="#portfolio" class="sq-btn sq-btn--secondary sq-btn--lg" data-cta="work_hero_portfolio">See projects</a>
+          </div>
+        </div>
+
+        <div class="sq-hero__logo-panel" aria-hidden="true" data-reveal>
+          <img src="../images/no-background.png" alt="" class="sq-hero__logo-img">
+        </div>
       </div>
-    </div>
+
+      <div class="sq-hero__scroll-hint" aria-hidden="true">
+        <span>See our work</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
 
     <!-- PORTFOLIO FILTERS & GRID -->
     <section class="sq-proof" aria-labelledby="portfolio-heading">
@@ -370,8 +404,316 @@
           <button class="sq-portfolio-filter-btn" data-filter-btn="lab">Lab</button>
         </div>
 
-        <!-- Grid Container -->
-        <div id="portfolio-grid-container"></div>
+        <!-- Grid Container with HTML Cards -->
+        <div class="sq-portfolio-grid">
+
+          <!-- DIGITAL: DesignLine Construction -->
+          <article class="sq-project-card" data-world="digital">
+            <div class="sq-project-card__image">
+              <img src="../images/website/designline 2.png" alt="DesignLine Construction website" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">Website Development</span>
+              <h3 class="sq-project-card__title">DesignLine Construction</h3>
+              <p class="sq-project-card__desc">Complete website redesign for a construction company with project showcase and lead capture optimization.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">Web Design</span>
+              </div>
+              <a href="https://designlineconstruction.com/" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">View Project →</a>
+            </div>
+          </article>
+
+          <!-- DIGITAL: Heaven Hotel -->
+          <article class="sq-project-card" data-world="digital">
+            <div class="sq-project-card__image">
+              <img src="../images/website/heaven-hotel.png" alt="Heaven Hotel website" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">Website Development & E-Commerce</span>
+              <h3 class="sq-project-card__title">Heaven Hotel</h3>
+              <p class="sq-project-card__desc">Luxury hospitality site with booking engine, 360° tour integration, and multi-world experience system.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">Hospitality</span>
+              </div>
+              <a href="https://www.heavenhotel.com.pk/" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">View Project →</a>
+            </div>
+          </article>
+
+          <!-- DIGITAL: SQ Interactive Website -->
+          <article class="sq-project-card" data-world="digital">
+            <div class="sq-project-card__image">
+              <img src="../images/ui ux and web/sq interactive 1.png" alt="SQ Interactive website" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">Brand Website & Design System</span>
+              <h3 class="sq-project-card__title">SQ Interactive Website</h3>
+              <p class="sq-project-card__desc">Complete brand repositioning with portfolio showcase, design token system, and responsive architecture across 39 pages.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2025</span>
+                <span class="sq-project-card__type">Design System</span>
+              </div>
+              <a href="https://sqinteractive.com/" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">View Project →</a>
+            </div>
+          </article>
+
+          <!-- DIGITAL: Visa Management System -->
+          <article class="sq-project-card" data-world="digital">
+            <div class="sq-project-card__image">
+              <img src="../images/ui ux and web/visa system 2.png" alt="Visa Management System interface" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">UI/UX & Enterprise Software</span>
+              <h3 class="sq-project-card__title">Visa Management System</h3>
+              <p class="sq-project-card__desc">Enterprise interface redesign serving visa consultancy with streamlined workflows and reduced data entry errors.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2023</span>
+                <span class="sq-project-card__type">Enterprise Software</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Private Project</span>
+            </div>
+          </article>
+
+          <!-- DIGITAL: NetSol Enterprise UI -->
+          <article class="sq-project-card" data-world="digital">
+            <div class="sq-project-card__image" style="background: linear-gradient(135deg, #1a1a2e 0%, #0a0a0a 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
+              <span style="color: #666; text-align: center; font-size: 14px;">Enterprise SaaS Interface</span>
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">UI/UX Design</span>
+              <h3 class="sq-project-card__title">NetSol Enterprise UI</h3>
+              <p class="sq-project-card__desc">Complex enterprise software redesign with improved information architecture and reduced support overhead.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2023</span>
+                <span class="sq-project-card__type">SaaS Design</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Private Project</span>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: Luxury Villa VR -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/after.png" alt="Luxury Villa VR experience" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">VR Real Estate</span>
+              <h3 class="sq-project-card__title">Luxury Villa VR Walkthrough</h3>
+              <p class="sq-project-card__desc">Photorealistic VR experience of off-plan luxury villa with interactive hotspots and spatial audio for Meta Quest 3.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">Real Estate</span>
+              </div>
+              <a href="https://www.youtube.com/watch?v=2IQI5v6wLCw&t=2s" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">Watch Demo →</a>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: 1 Kanal Villa VR -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/ik house.png" alt="1 Kanal Villa VR" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">VR Real Estate</span>
+              <h3 class="sq-project-card__title">1 Kanal Villa VR</h3>
+              <p class="sq-project-card__desc">Mobile-optimized VR property visualization with elegant lighting and smooth interior navigation.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">Real Estate</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Private Project</span>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: Matlock Galani 360° Tour -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/matlock.png" alt="Matlock Galani 360 tour" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">360° Tours</span>
+              <h3 class="sq-project-card__title">Matlock Galani 360° Tour</h3>
+              <p class="sq-project-card__desc">Interactive 360° property experience captured with Insta360 X3 for web and mobile viewing.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">360° Video</span>
+              </div>
+              <a href="https://youtu.be/tTfrOWW8lW4?si=AC40hyr6r_kXw3xp" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">Watch Tour →</a>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: NeuroSpace VR -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/NeuroSpace VR Preview.png" alt="NeuroSpace VR environment" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">Immersive Experiences</span>
+              <h3 class="sq-project-card__title">NeuroSpace VR</h3>
+              <p class="sq-project-card__desc">Therapeutic VR environment with spatial audio and interactive elements for wellness applications.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">Wellness</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Private Project</span>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: VR Material Swap Engine -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/material swap.png" alt="VR Material Swap Engine" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">VR Tools</span>
+              <h3 class="sq-project-card__title">VR Material Swap Engine</h3>
+              <p class="sq-project-card__desc">Real-time material and finish swapping system for VR design visualization on Meta Quest 3, PC VR, and WebGL.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">VR Tool</span>
+              </div>
+              <a href="https://www.youtube.com/watch?v=tM35bx3G15U" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">Watch Demo →</a>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: 360° Tours Suite -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/ui ux and web/Screenshot 2025-12-29 214144.png" alt="360 Tours Suite" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">360° Tours</span>
+              <h3 class="sq-project-card__title">360° Virtual Tour Suite</h3>
+              <p class="sq-project-card__desc">Interactive property tours for hospitality, real estate, and commercial clients with hotspots and web integration.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">360° Video</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Multiple Clients</span>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: Heaven Hotel 360° Tour -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/front1.jpg" alt="Heaven Hotel 360 tour" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">360° Tours</span>
+              <h3 class="sq-project-card__title">Heaven Hotel 360° Tour</h3>
+              <p class="sq-project-card__desc">Interactive virtual tour of luxury hospitality property integrated with booking engine and room availability system.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">Hospitality</span>
+              </div>
+              <a href="https://www.heavenhotel.com.pk/" target="_blank" rel="noopener noreferrer" class="sq-project-card__link">View Project →</a>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: SQ Office 360° Tour -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image" style="background: linear-gradient(135deg, #2a2a3e 0%, #0a0a0a 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
+              <span style="color: #666; text-align: center; font-size: 14px;">Studio Virtual Tour</span>
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">360° Tours</span>
+              <h3 class="sq-project-card__title">SQ Office 360° Tour</h3>
+              <p class="sq-project-card__desc">Interactive 360° tour of SQ Interactive's creative studio space showcasing the team environment.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">360° Video</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Studio Tour</span>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: Furniture Scanning — Sofa -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/sofa.png" alt="3D Scanned Sofa" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">3D Scanning</span>
+              <h3 class="sq-project-card__title">Furniture Scanning — Sofa</h3>
+              <p class="sq-project-card__desc">High-fidelity 3D scan using photogrammetry. Reusable asset for multiple VR and design visualization projects.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">3D Asset</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Asset Library</span>
+            </div>
+          </article>
+
+          <!-- IMMERSIVE: Furniture Scanning — Elephant Sculpture -->
+          <article class="sq-project-card" data-world="immersive">
+            <div class="sq-project-card__image">
+              <img src="../images/vr and 360/elephant scan.png" alt="3D Scanned Elephant Sculpture" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">3D Scanning</span>
+              <h3 class="sq-project-card__title">Furniture Scanning — Elephant</h3>
+              <p class="sq-project-card__desc">Detailed 3D scan of decorative sculpture created with photogrammetry for interior design projects.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">3D Asset</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Asset Library</span>
+            </div>
+          </article>
+
+          <!-- AI: AI Interior Design System -->
+          <article class="sq-project-card" data-world="ai">
+            <div class="sq-project-card__image">
+              <img src="../images/ai/ai interior design.png" alt="AI Interior Design System" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">AI Visualization</span>
+              <h3 class="sq-project-card__title">AI Interior Design System</h3>
+              <p class="sq-project-card__desc">AI-assisted visualization pipeline that generates multiple design concepts from floor plans and design briefs using generative AI.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">AI/ML</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Pilot Project</span>
+            </div>
+          </article>
+
+          <!-- AI: VR-AI Interior Assistant -->
+          <article class="sq-project-card" data-world="ai">
+            <div class="sq-project-card__image">
+              <img src="../images/ai/ai agent job seeker.png" alt="VR-AI Interior Assistant" loading="lazy">
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">AI Agent</span>
+              <h3 class="sq-project-card__title">VR-AI Interior Assistant</h3>
+              <p class="sq-project-card__desc">Intelligent AI agent for VR environments that provides real-time design assistance and recommendations using natural language processing.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">AI/ML</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Pilot Project</span>
+            </div>
+          </article>
+
+          <!-- LAB: VR Adventures for the Disabled -->
+          <article class="sq-project-card" data-world="lab">
+            <div class="sq-project-card__image" style="background: linear-gradient(135deg, #2a1a3e 0%, #0a0a0a 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
+              <span style="color: #666; text-align: center; font-size: 14px;">Accessible VR Experience</span>
+            </div>
+            <div class="sq-project-card__content">
+              <span class="sq-label">Experimental</span>
+              <h3 class="sq-project-card__title">VR Adventures for the Disabled</h3>
+              <p class="sq-project-card__desc">Experimental VR experience designed with adaptive controls and inclusive design principles for accessibility.</p>
+              <div class="sq-project-card__meta">
+                <span class="sq-project-card__year">2024</span>
+                <span class="sq-project-card__type">R&D</span>
+              </div>
+              <span class="sq-project-card__link" style="opacity: 0.6;">Experimental</span>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
@@ -431,11 +773,32 @@
     <span>Tell us your challenge</span>
   </a>
 
-  <script src="../js/projects-data.js" defer></script>
-  <script src="../js/portfolio-grid.js" defer></script>
   <script src="../js/nav.js" defer></script>
   <script src="../js/main.js" defer></script>
   <script>document.getElementById('sq-year').textContent = new Date().getFullYear();</script>
   <script src="../js/unified-nav.js" defer></script>
+
+  <!-- Portfolio Filter Script -->
+  <script defer>
+    document.querySelectorAll('[data-filter-btn]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        document.querySelectorAll('[data-filter-btn]').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        // Get filter value
+        const filterValue = btn.getAttribute('data-filter-btn');
+
+        // Filter cards
+        document.querySelectorAll('.sq-project-card').forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-world') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
